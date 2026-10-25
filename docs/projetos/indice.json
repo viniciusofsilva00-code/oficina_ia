@@ -448,6 +448,362 @@
   ]
  },
  {
+  "id": "001-mesa-de-decoracao-de-festa",
+  "titulo": "Mesa ripada de decoração de festa",
+  "resumo": "Mesa retangular de cedrinho, de 120 cm de comprimento e 80 cm de altura, com tampo de tábuas coladas e frente ripada. Tem 2 laterais maciças, 25 ripas e 2 travessas escondidas atrás.",
+  "data": "2026-10-25",
+  "dificuldade": 2,
+  "dimensoes_externas": {
+   "largura": 120,
+   "altura": 80,
+   "profundidade": 40
+  },
+  "status": "ok",
+  "miniatura": [
+   {
+    "caixa": [
+     0,
+     77.5,
+     0,
+     120,
+     2.5,
+     20
+    ],
+    "grupo": "Tampo"
+   },
+   {
+    "caixa": [
+     0,
+     77.5,
+     20,
+     120,
+     2.5,
+     20
+    ],
+    "grupo": "Tampo"
+   },
+   {
+    "caixa": [
+     0,
+     0,
+     7,
+     2.5,
+     77.5,
+     26
+    ],
+    "grupo": "Laterais"
+   },
+   {
+    "caixa": [
+     117.5,
+     0,
+     7,
+     2.5,
+     77.5,
+     26
+    ],
+    "grupo": "Laterais"
+   },
+   {
+    "caixa": [
+     2.5,
+     8,
+     26,
+     115,
+     12,
+     2
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     2.5,
+     50,
+     26,
+     115,
+     12,
+     2
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     5,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     9.5,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     14,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     18.5,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     23,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     27.5,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     32,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     36.5,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     41,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     45.5,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     50,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     54.5,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     59,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     63.5,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     68,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     72.5,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     77,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     81.5,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     86,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     90.5,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     95,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     99.5,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     104,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     108.5,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   },
+   {
+    "caixa": [
+     113,
+     0,
+     14,
+     2,
+     77.5,
+     12
+    ],
+    "grupo": "Ripado"
+   }
+  ]
+ },
+ {
   "id": "000-gabinete-pia-60",
   "titulo": "Gabinete da pia 60",
   "resumo": "Gabinete de piso em MDF RU com 2 portas e rodapé recuado. Segura a pia de sobrepor de 60 × 45 cm pela borda e deixa a cuba e o sifão livres por baixo.",

@@ -1,0 +1,953 @@
+{
+  "versao": 1,
+  "id": "001-mesa-de-decoracao-de-festa",
+  "titulo": "Mesa ripada de decoração de festa",
+  "resumo": "Mesa retangular de cedrinho, de 120 cm de comprimento e 80 cm de altura, com tampo de tábuas coladas e frente ripada. Tem 2 laterais maciças, 25 ripas e 2 travessas escondidas atrás.",
+  "pedido_original": "Mesa de decoração de festa. Medidas: siga o projeto da mesa grande da imagem anexada. Uso: decorações de festa. Material: madeira maciça. Extras: pode ser cedrinho.",
+  "data": "2026-10-25",
+  "dificuldade": 2,
+  "tempo": "2 fins de semana · cerca de 12 h + secagem do verniz",
+  "dimensoes_externas": {
+    "largura": 120,
+    "altura": 80,
+    "profundidade": 40
+  },
+  "medidas_conhecidas": [
+    {
+      "nome": "Comprimento da mesa",
+      "valor": 120,
+      "unidade": "cm",
+      "fonte": "foto-01.jpg, cota de 1,20 m acima da mesa retangular"
+    },
+    {
+      "nome": "Altura da mesa",
+      "valor": 80,
+      "unidade": "cm",
+      "fonte": "foto-01.jpg, cota de 80 cm na lateral esquerda da mesa retangular"
+    }
+  ],
+  "premissas": [
+    {
+      "nome": "Profundidade do tampo",
+      "valor": 40,
+      "unidade": "cm",
+      "como_conferir": "A foto não mostra a profundidade. Meça o lugar onde a mesa vai ficar e veja se 40 cm bastam para as peças da decoração."
+    },
+    {
+      "nome": "Espessura do tampo e das laterais (cedrinho)",
+      "valor": 2.5,
+      "unidade": "cm",
+      "como_conferir": "Meça a tábua na madeireira com trena na borda. Se vier 2 cm, avise no pedido de ajuste."
+    },
+    {
+      "nome": "Espessura das ripas e travessas (cedrinho)",
+      "valor": 2,
+      "unidade": "cm",
+      "como_conferir": "Meça a tábua na madeireira. Tábua de 2 cm é a mais comum."
+    },
+    {
+      "nome": "Largura das ripas",
+      "valor": 12,
+      "unidade": "cm",
+      "como_conferir": "Tábua de 15 cm tem largura útil de cerca de 14 cm. Confira se dá para serrar 12 cm."
+    },
+    {
+      "nome": "Vão entre as ripas",
+      "valor": 2.5,
+      "unidade": "cm",
+      "como_conferir": "Faça um espaçador de madeira de 2,5 cm e encoste entre duas ripas."
+    },
+    {
+      "nome": "Peso sobre o tampo",
+      "valor": "até 25 kg",
+      "unidade": "",
+      "como_conferir": "Some o peso de bolo, doces e enfeites. Acima disso, peça uma travessa extra no ajuste."
+    },
+    {
+      "nome": "Uso em lugar coberto, piso plano",
+      "valor": "sim",
+      "unidade": "",
+      "como_conferir": "Se for ao ar livre, use verniz marítimo e peça a troca no ajuste."
+    }
+  ],
+  "perguntas": [
+    "A foto mostra também duas mesinhas redondas (60 e 70 cm de diâmetro). Elas não entraram: este sistema só faz peças retas. Quer uma versão quadrada?",
+    "As laterais da foto são inclinadas. Aqui elas ficam retas, para o corte ser simples."
+  ],
+  "conferencias": [
+    {
+      "descricao": "Largura: laterais + espaço das ripas",
+      "soma": [
+        2.5,
+        115,
+        2.5
+      ],
+      "esperado": 120
+    },
+    {
+      "descricao": "Altura: laterais + tampo",
+      "soma": [
+        77.5,
+        2.5
+      ],
+      "esperado": 80
+    },
+    {
+      "descricao": "Profundidade: 2 tábuas do tampo",
+      "soma": [
+        20,
+        20
+      ],
+      "esperado": 40
+    },
+    {
+      "descricao": "Espaço das ripas: 25 ripas e 26 vãos",
+      "soma": [
+        50,
+        65
+      ],
+      "esperado": 115
+    },
+    {
+      "descricao": "Altura igual à da foto (80 cm)",
+      "soma": [
+        80
+      ],
+      "esperado": 80
+    }
+  ],
+  "materiais": [
+    {
+      "id": "cedro25x30",
+      "nome": "Tábua de cedrinho 2,5 × 30 cm",
+      "tipo": "tabua",
+      "espessura_mm": 25,
+      "chapa": {
+        "comprimento": 300,
+        "largura": 30
+      },
+      "veio": true
+    },
+    {
+      "id": "cedro20x15",
+      "nome": "Tábua de cedrinho 2 × 15 cm",
+      "tipo": "tabua",
+      "espessura_mm": 20,
+      "chapa": {
+        "comprimento": 300,
+        "largura": 15
+      },
+      "veio": true
+    }
+  ],
+  "pecas": [
+    {
+      "id": "T1",
+      "nome": "Tampo, tábua de trás",
+      "grupo": "Tampo",
+      "material": "cedro25x30",
+      "caixa": [
+        0,
+        77.5,
+        0,
+        120,
+        2.5,
+        20
+      ],
+      "veio": "x",
+      "bordas": [],
+      "obs": "Fica no lado da parede. A face de cima é a que aparece: lixe com cuidado."
+    },
+    {
+      "id": "T2",
+      "nome": "Tampo, tábua da frente",
+      "grupo": "Tampo",
+      "material": "cedro25x30",
+      "caixa": [
+        0,
+        77.5,
+        20,
+        120,
+        2.5,
+        20
+      ],
+      "veio": "x",
+      "bordas": [],
+      "obs": "Cola de lado na T1. Alinhe as pontas."
+    },
+    {
+      "id": "E1",
+      "nome": "Lateral esquerda",
+      "grupo": "Laterais",
+      "material": "cedro25x30",
+      "caixa": [
+        0,
+        0,
+        7,
+        2.5,
+        77.5,
+        26
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": "Em pé, centralizada na profundidade do tampo (sobra de 7 cm na frente e atrás)."
+    },
+    {
+      "id": "E2",
+      "nome": "Lateral direita",
+      "grupo": "Laterais",
+      "material": "cedro25x30",
+      "caixa": [
+        117.5,
+        0,
+        7,
+        2.5,
+        77.5,
+        26
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": "Igual à esquerda."
+    },
+    {
+      "id": "R1",
+      "nome": "Travessa de baixo",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        2.5,
+        8,
+        26,
+        115,
+        12,
+        2
+      ],
+      "veio": "x",
+      "bordas": [],
+      "obs": "Atrás das ripas, de 8 a 20 cm do chão."
+    },
+    {
+      "id": "R2",
+      "nome": "Travessa de cima",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        2.5,
+        50,
+        26,
+        115,
+        12,
+        2
+      ],
+      "veio": "x",
+      "bordas": [],
+      "obs": "Atrás das ripas, de 50 a 62 cm do chão."
+    },
+    {
+      "id": "S01",
+      "nome": "Ripa 1",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        5,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": "Em pé, do chão até embaixo do tampo."
+    },
+    {
+      "id": "S02",
+      "nome": "Ripa 2",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        9.5,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S03",
+      "nome": "Ripa 3",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        14,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S04",
+      "nome": "Ripa 4",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        18.5,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S05",
+      "nome": "Ripa 5",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        23,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S06",
+      "nome": "Ripa 6",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        27.5,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S07",
+      "nome": "Ripa 7",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        32,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S08",
+      "nome": "Ripa 8",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        36.5,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S09",
+      "nome": "Ripa 9",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        41,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S10",
+      "nome": "Ripa 10",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        45.5,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S11",
+      "nome": "Ripa 11",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        50,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S12",
+      "nome": "Ripa 12",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        54.5,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S13",
+      "nome": "Ripa 13",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        59,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S14",
+      "nome": "Ripa 14",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        63.5,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S15",
+      "nome": "Ripa 15",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        68,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S16",
+      "nome": "Ripa 16",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        72.5,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S17",
+      "nome": "Ripa 17",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        77,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S18",
+      "nome": "Ripa 18",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        81.5,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S19",
+      "nome": "Ripa 19",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        86,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S20",
+      "nome": "Ripa 20",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        90.5,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S21",
+      "nome": "Ripa 21",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        95,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S22",
+      "nome": "Ripa 22",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        99.5,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S23",
+      "nome": "Ripa 23",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        104,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S24",
+      "nome": "Ripa 24",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        108.5,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "S25",
+      "nome": "Ripa 25",
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "caixa": [
+        113,
+        0,
+        14,
+        2,
+        77.5,
+        12
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    }
+  ],
+  "referencias": [],
+  "folgas": [],
+  "compras": [
+    {
+      "categoria": "Madeira",
+      "item": "Tábua de cedrinho 2,5 × 30 cm, 3 m",
+      "quantidade": 2,
+      "unidade": "tábua",
+      "material": "cedro25x30",
+      "obs": "Tampo (2 peças) e laterais (2 peças)."
+    },
+    {
+      "categoria": "Madeira",
+      "item": "Tábua de cedrinho 2 × 15 cm, 3 m",
+      "quantidade": 10,
+      "unidade": "tábua",
+      "material": "cedro20x15",
+      "obs": "Ripas (3 por tábua) e travessas (as duas juntas em uma tábua)."
+    },
+    {
+      "categoria": "Fixação",
+      "item": "Parafuso para madeira cabeça chata 4,0 × 30 mm",
+      "quantidade": 60,
+      "unidade": "un",
+      "obs": "52 usados: 50 nas ripas e 2 nas laterais."
+    },
+    {
+      "categoria": "Fixação",
+      "item": "Parafuso para madeira cabeça chata 4,0 × 50 mm",
+      "quantidade": 8,
+      "unidade": "un",
+      "obs": "6 usados: 3 por lateral, pelo tampo."
+    },
+    {
+      "categoria": "Fixação",
+      "item": "Cavilha de madeira 8 × 30 mm",
+      "quantidade": 12,
+      "unidade": "un",
+      "obs": "6 para tampar os furos das laterais e sobra."
+    },
+    {
+      "categoria": "Fixação",
+      "item": "Cola de madeira PVA, 500 g",
+      "quantidade": 1,
+      "unidade": "frasco"
+    },
+    {
+      "categoria": "Acabamento",
+      "item": "Verniz fosco à base d'água ou óleo para madeira, 900 ml",
+      "quantidade": 2,
+      "unidade": "lata",
+      "obs": "Cerca de 8 m² × 2 demãos ÷ 12 m² por litro."
+    },
+    {
+      "categoria": "Acabamento",
+      "item": "Lixa grão 120",
+      "quantidade": 4,
+      "unidade": "folhas"
+    },
+    {
+      "categoria": "Acabamento",
+      "item": "Lixa grão 180",
+      "quantidade": 6,
+      "unidade": "folhas"
+    }
+  ],
+  "ferramentas": [
+    {
+      "nome": "Serra circular com régua-guia",
+      "uso": "Cortes retos e serrar as tábuas no comprimento. Dispensável se a madeireira cortar."
+    },
+    {
+      "nome": "2 grampos sargento de 120 cm",
+      "uso": "Colar o tampo e prender as laterais."
+    },
+    {
+      "nome": "Furadeira/parafusadeira",
+      "uso": "Pré-furos e parafusos."
+    },
+    {
+      "nome": "Brocas 3 mm, 8 mm e escareador",
+      "uso": "Pré-furo, cavilha e rebaixo da cabeça do parafuso."
+    },
+    {
+      "nome": "Trena, esquadro e lápis",
+      "uso": "Medir, marcar e conferir os 90°."
+    },
+    {
+      "nome": "Lixadeira orbital ou bloco de lixa",
+      "uso": "Alisar todas as peças."
+    },
+    {
+      "nome": "Serrote de costas",
+      "uso": "Aparar as cavilhas rente ao tampo."
+    },
+    {
+      "nome": "Pincel ou rolo de espuma",
+      "uso": "Passar o verniz."
+    },
+    {
+      "nome": "Óculos, protetor de ouvido e máscara",
+      "uso": "Proteção no corte e na lixa."
+    }
+  ],
+  "passos": [
+    {
+      "titulo": "Separe e confira as tábuas",
+      "pecas": [],
+      "texto": "Espalhe as tábuas e a lista de corte. Escolha a face mais bonita de cada tábua do tampo.\n\nEscreva o código de cada peça a lápis, na face que fica escondida.",
+      "erro_comum": "Usar tábua empenada no tampo. Deite a tábua no chão: se balançar, deixe para as ripas."
+    },
+    {
+      "titulo": "Corte as tábuas",
+      "pecas": [],
+      "texto": "- Tábuas de 30 cm: 2 tampos de 120 × 20 cm e 2 laterais de 77,5 × 26 cm.\n- Tábuas de 15 cm: 25 ripas de 77,5 × 12 cm e 2 travessas de 115 × 12 cm.\n\nPara tirar 20, 26 e 12 cm de largura, serre no comprimento da tábua com serra circular e régua-guia. Se preferir, a madeireira corta para você.\n\nMeça cada corte duas vezes. Corte a primeira ripa e use como molde das outras.",
+      "erro_comum": "Cortar as 25 ripas medindo uma a uma. Use um batente na bancada e todas saem iguais."
+    },
+    {
+      "titulo": "Lixe todas as peças",
+      "pecas": [],
+      "texto": "Lixe com grão 120 e depois 180, sempre a favor do veio.\n\n- Quebre de leve as quinas das ripas e do tampo.\n- Lixe as ripas antes de montar: depois não dá para chegar entre elas.",
+      "erro_comum": "Lixar contra o veio. Deixa riscos que só aparecem depois do verniz."
+    },
+    {
+      "titulo": "Monte o tampo",
+      "pecas": [
+        "T1",
+        "T2"
+      ],
+      "texto": "Deite as duas tábuas lado a lado, com a face bonita para baixo.\n\n- Passe cola de madeira na lateral de uma delas.\n- Junte e prenda com 2 grampos sargento, um em cada ponta.\n- Limpe a cola que escorreu com pano úmido.\n- Deixe secar 2 h antes de soltar os grampos.",
+      "erro_comum": "Deixar degrau entre as tábuas. Confira com a palma da mão antes de apertar os grampos."
+    },
+    {
+      "titulo": "Prenda as laterais no tampo",
+      "pecas": [
+        "E1",
+        "E2"
+      ],
+      "texto": "Com o tampo virado, face bonita para baixo, marque a posição das laterais: bem na ponta, a 7 cm da frente e de trás.\n\n- Passe cola na borda das laterais que encosta no tampo.\n- Faça 3 pré-furos de 3 mm por lateral, de baixo para cima, sem atravessar a face bonita.\n- Parafuse com 4,0 × 50 mm, escareando o furo.\n- Tampe os furos com cavilhas coladas e lixe rente.",
+      "erro_comum": "Furar além da espessura do tampo. O parafuso aparece na face bonita."
+    },
+    {
+      "titulo": "Marque a posição das ripas",
+      "pecas": [],
+      "texto": "Deite as duas travessas lado a lado na bancada.\n\nA primeira ripa começa a 2,5 cm da ponta da travessa. Depois, uma marca a cada 4,5 cm (2 cm da ripa e 2,5 cm de vão).\n\nFaça um espaçador de 2,5 cm com sobra de madeira: ele garante vão igual entre todas.",
+      "erro_comum": "Marcar a ripa e esquecer o vão. As marcas vão de 4,5 em 4,5 cm, não de 2 em 2."
+    },
+    {
+      "titulo": "Monte o ripado deitado",
+      "pecas": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S18",
+        "S19",
+        "S20",
+        "S21",
+        "S22",
+        "S23",
+        "S24",
+        "S25",
+        "R1",
+        "R2"
+      ],
+      "texto": "Deite as 25 ripas na bancada, com o espaçador entre elas e as pontas de baixo alinhadas numa régua.\n\n- Apoie as travessas atrás das ripas: a de baixo a 8 cm do pé e a de cima a 50 cm.\n- Faça 2 parafusos 4,0 × 30 mm por ripa, um em cada travessa, com pré-furo de 3 mm.\n- Confira o esquadro a cada 5 ripas.",
+      "erro_comum": "Esquadro errado no começo. Se as ripas saírem tortas, o ripado não entra entre as laterais."
+    },
+    {
+      "titulo": "Encaixe o ripado sob o tampo",
+      "pecas": [],
+      "texto": "Com o tampo e as laterais já secos, deixe o móvel de cabeça para baixo sobre um cobertor.\n\n- Encaixe o ripado entre as laterais, com as travessas para o lado de trás.\n- Passe cola na ponta das ripas que encosta no tampo.\n- Aperte as laterais com grampos sargento até a cola pegar.\n- Pelo lado de dentro, passe 1 parafuso 4,0 × 30 de cada ponta da travessa de cima na lateral.",
+      "erro_comum": "Apertar demais o grampo e entortar as laterais. Meça os 115 cm entre elas nas duas pontas."
+    },
+    {
+      "titulo": "Acabamento",
+      "pecas": [],
+      "texto": "Siga a seção de acabamento: tire o pó e passe verniz ou óleo em todas as faces, também embaixo do tampo e nas laterais das ripas.",
+      "erro_comum": "Esquecer o pé das ripas. Madeira nua no chão absorve umidade e marca."
+    },
+    {
+      "titulo": "Vire, nivele e confira",
+      "pecas": [],
+      "texto": "Vire a mesa com cuidado, em duas pessoas.\n\n- Apoie em piso plano e veja se balança.\n- Se balançar, lixe o pé mais longo em pequenos passos.\n- Confira as diagonais do tampo: devem ser iguais.",
+      "erro_comum": "Cortar o pé para consertar balanço sem medir. Marque o ponto com lápis e lixe só o que passar."
+    }
+  ],
+  "acabamento": [
+    {
+      "titulo": "Preparar",
+      "texto": "Passe lixa 180 em tudo e tire o pó com pano úmido bem torcido."
+    },
+    {
+      "titulo": "Verniz ou óleo",
+      "texto": "2 demãos finas, com lixa 180 bem de leve entre elas. Secagem: 4 h entre demãos; 24 h antes de usar."
+    },
+    {
+      "titulo": "Onde caprichar",
+      "texto": "- Pé das ripas e das laterais: tocam o chão.\n- Lados das ripas: pincele com pouca tinta para não escorrer."
+    }
+  ],
+  "instalacao": [
+    {
+      "titulo": "Escolha o lugar",
+      "texto": "- Piso plano e firme.\n- Deixe 1 m livre na frente para circular.\n- Evite sol direto e chuva."
+    },
+    {
+      "titulo": "Na decoração",
+      "texto": "- Peso sobre o tampo: até 25 kg.\n- Use toalha ou caminho de mesa para proteger o verniz de cera de vela e de bebidas."
+    }
+  ],
+  "checklist": [
+    "Todas as premissas foram conferidas antes do corte.",
+    "As 25 ripas têm o mesmo comprimento.",
+    "Os vãos entre as ripas são iguais.",
+    "As diagonais do tampo são iguais.",
+    "A mesa não balança no piso.",
+    "O verniz secou por 24 h antes de usar."
+  ],
+  "glossario": [
+    {
+      "termo": "Cedrinho",
+      "definicao": "Madeira clara, leve e fácil de trabalhar. Vem em tábuas."
+    },
+    {
+      "termo": "Ripa",
+      "definicao": "Tira estreita de madeira. Aqui, são as tiras em pé da frente da mesa."
+    },
+    {
+      "termo": "Travessa",
+      "definicao": "Peça que liga outras, aqui atrás das ripas para segurá-las."
+    },
+    {
+      "termo": "Tampo",
+      "definicao": "Parte de cima da mesa, onde ficam os objetos."
+    },
+    {
+      "termo": "Veio",
+      "definicao": "Desenho e direção das fibras da madeira."
+    },
+    {
+      "termo": "Régua-guia",
+      "definicao": "Régua de alumínio presa na tábua para a serra circular cortar reto."
+    },
+    {
+      "termo": "Grampo sargento",
+      "definicao": "Ferramenta que aperta duas peças uma contra a outra."
+    },
+    {
+      "termo": "Cavilha",
+      "definicao": "Pino de madeira que tampa o furo ou reforça a junção."
+    },
+    {
+      "termo": "Pré-furo",
+      "definicao": "Furo fino feito antes do parafuso para a madeira não rachar."
+    },
+    {
+      "termo": "Escareador",
+      "definicao": "Broca que abre um rebaixo para a cabeça do parafuso ficar rente."
+    },
+    {
+      "termo": "Diagonal",
+      "definicao": "Medida de um canto ao canto oposto. Se as duas forem iguais, o tampo está no esquadro."
+    }
+  ],
+  "fotos": [
+    "fotos/foto-01.jpg"
+  ]
+}

@@ -1,0 +1,482 @@
+{
+  "status": "ok",
+  "erros": [],
+  "avisos": [],
+  "verificacoes": [
+    "Espessura de todas as peças igual à do material",
+    "Nenhuma peça ocupa o lugar de outra (31 peças)",
+    "Medidas externas conferem: 120,0 × 40,0 × 80,0 cm",
+    "Largura: laterais + espaço das ripas: 120,0",
+    "Altura: laterais + tampo: 80,0",
+    "Profundidade: 2 tábuas do tampo: 40,0",
+    "Espaço das ripas: 25 ripas e 26 vãos: 115,0",
+    "Altura igual à da foto (80 cm): 80,0",
+    "Cada peça é montada em exatamente um passo (10 passos)",
+    "Chapas da lista de compras bastam: 2 × Tábua de cedrinho 2,5 × 30 cm, 10 × Tábua de cedrinho 2 × 15 cm"
+  ],
+  "medidas_reais": {
+    "largura": 120,
+    "altura": 80.0,
+    "profundidade": 40
+  },
+  "lista_corte": [
+    {
+      "ids": [
+        "E1",
+        "E2"
+      ],
+      "nomes": [
+        "Lateral esquerda",
+        "Lateral direita"
+      ],
+      "grupo": "Laterais",
+      "material": "cedro25x30",
+      "material_nome": "Tábua de cedrinho 2,5 × 30 cm",
+      "comprimento": 77.5,
+      "largura": 26,
+      "espessura_mm": 25,
+      "veio": "no comprimento",
+      "bordas": [],
+      "fita_cm": 0.0,
+      "qtd": 2
+    },
+    {
+      "ids": [
+        "R1",
+        "R2"
+      ],
+      "nomes": [
+        "Travessa de baixo",
+        "Travessa de cima"
+      ],
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "material_nome": "Tábua de cedrinho 2 × 15 cm",
+      "comprimento": 115,
+      "largura": 12,
+      "espessura_mm": 20,
+      "veio": "no comprimento",
+      "bordas": [],
+      "fita_cm": 0.0,
+      "qtd": 2
+    },
+    {
+      "ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S18",
+        "S19",
+        "S20",
+        "S21",
+        "S22",
+        "S23",
+        "S24",
+        "S25"
+      ],
+      "nomes": [
+        "Ripa 1",
+        "Ripa 2",
+        "Ripa 3",
+        "Ripa 4",
+        "Ripa 5",
+        "Ripa 6",
+        "Ripa 7",
+        "Ripa 8",
+        "Ripa 9",
+        "Ripa 10",
+        "Ripa 11",
+        "Ripa 12",
+        "Ripa 13",
+        "Ripa 14",
+        "Ripa 15",
+        "Ripa 16",
+        "Ripa 17",
+        "Ripa 18",
+        "Ripa 19",
+        "Ripa 20",
+        "Ripa 21",
+        "Ripa 22",
+        "Ripa 23",
+        "Ripa 24",
+        "Ripa 25"
+      ],
+      "grupo": "Ripado",
+      "material": "cedro20x15",
+      "material_nome": "Tábua de cedrinho 2 × 15 cm",
+      "comprimento": 77.5,
+      "largura": 12,
+      "espessura_mm": 20,
+      "veio": "no comprimento",
+      "bordas": [],
+      "fita_cm": 0.0,
+      "qtd": 25
+    },
+    {
+      "ids": [
+        "T1",
+        "T2"
+      ],
+      "nomes": [
+        "Tampo, tábua de trás",
+        "Tampo, tábua da frente"
+      ],
+      "grupo": "Tampo",
+      "material": "cedro25x30",
+      "material_nome": "Tábua de cedrinho 2,5 × 30 cm",
+      "comprimento": 120,
+      "largura": 20,
+      "espessura_mm": 25,
+      "veio": "no comprimento",
+      "bordas": [],
+      "fita_cm": 0.0,
+      "qtd": 2
+    }
+  ],
+  "fita_total_m": 0.0,
+  "plano_corte": [
+    {
+      "material": "cedro25x30",
+      "nome": "Tábua de cedrinho 2,5 × 30 cm",
+      "chapa": {
+        "comprimento": 300,
+        "largura": 30
+      },
+      "chapas": [
+        {
+          "pecas": [
+            {
+              "id": "E1",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 26,
+              "girada": false
+            },
+            {
+              "id": "E2",
+              "x": 78.8,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 26,
+              "girada": false
+            },
+            {
+              "id": "T1",
+              "x": 156.6,
+              "y": 1.0,
+              "c": 120,
+              "l": 20,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.714
+        },
+        {
+          "pecas": [
+            {
+              "id": "T2",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 120,
+              "l": 20,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.267
+        }
+      ]
+    },
+    {
+      "material": "cedro20x15",
+      "nome": "Tábua de cedrinho 2 × 15 cm",
+      "chapa": {
+        "comprimento": 300,
+        "largura": 15
+      },
+      "chapas": [
+        {
+          "pecas": [
+            {
+              "id": "R1",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 115,
+              "l": 12,
+              "girada": false
+            },
+            {
+              "id": "R2",
+              "x": 116.3,
+              "y": 1.0,
+              "c": 115,
+              "l": 12,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.613
+        },
+        {
+          "pecas": [
+            {
+              "id": "S01",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            },
+            {
+              "id": "S02",
+              "x": 78.8,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            },
+            {
+              "id": "S03",
+              "x": 156.6,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.62
+        },
+        {
+          "pecas": [
+            {
+              "id": "S04",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            },
+            {
+              "id": "S05",
+              "x": 78.8,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            },
+            {
+              "id": "S06",
+              "x": 156.6,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.62
+        },
+        {
+          "pecas": [
+            {
+              "id": "S07",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            },
+            {
+              "id": "S08",
+              "x": 78.8,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            },
+            {
+              "id": "S09",
+              "x": 156.6,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.62
+        },
+        {
+          "pecas": [
+            {
+              "id": "S10",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            },
+            {
+              "id": "S11",
+              "x": 78.8,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            },
+            {
+              "id": "S12",
+              "x": 156.6,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.62
+        },
+        {
+          "pecas": [
+            {
+              "id": "S13",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            },
+            {
+              "id": "S14",
+              "x": 78.8,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            },
+            {
+              "id": "S15",
+              "x": 156.6,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.62
+        },
+        {
+          "pecas": [
+            {
+              "id": "S16",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            },
+            {
+              "id": "S17",
+              "x": 78.8,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            },
+            {
+              "id": "S18",
+              "x": 156.6,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.62
+        },
+        {
+          "pecas": [
+            {
+              "id": "S19",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            },
+            {
+              "id": "S20",
+              "x": 78.8,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            },
+            {
+              "id": "S21",
+              "x": 156.6,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.62
+        },
+        {
+          "pecas": [
+            {
+              "id": "S22",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            },
+            {
+              "id": "S23",
+              "x": 78.8,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            },
+            {
+              "id": "S24",
+              "x": 156.6,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.62
+        },
+        {
+          "pecas": [
+            {
+              "id": "S25",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 77.5,
+              "l": 12,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.207
+        }
+      ]
+    }
+  ],
+  "gerado_em": "2026-10-25T20:20:35+00:00"
+}
