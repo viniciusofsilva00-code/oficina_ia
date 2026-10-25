@@ -1,0 +1,52 @@
+name: Novo projeto de móvel
+description: Mande as fotos e a ideia; o projeto volta pronto em alguns minutos.
+title: "[projeto] "
+labels: ["projeto"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fotos com a **trena aparecendo** ajudam muito: encoste a trena na peça e fotografe de frente, com o número legível.
+  - type: textarea
+    id: ideia
+    attributes:
+      label: Ideia
+      description: O que você quer construir? Para que serve, quantas portas, gavetas ou prateleiras.
+      placeholder: "Ex.: gabinete para a pia do banheiro, com 2 portas."
+    validations:
+      required: true
+  - type: textarea
+    id: fotos
+    attributes:
+      label: Fotos
+      description: Arraste as fotos para esta caixa (ou toque e escolha da galeria). Espere cada uma terminar de subir.
+    validations:
+      required: true
+  - type: textarea
+    id: medidas
+    attributes:
+      label: Medidas que você já sabe
+      description: Largura, altura, profundidade, distância dos canos… em centímetros.
+      placeholder: "Ex.: pia 60 x 45 cm; altura até a pia 85 cm"
+  - type: input
+    id: local
+    attributes:
+      label: Onde o móvel vai ficar
+      placeholder: "Ex.: banheiro, encostado na parede"
+  - type: dropdown
+    id: material
+    attributes:
+      label: Material
+      options:
+        - Não sei, escolha por mim
+        - MDF RU (resistente à umidade)
+        - Compensado naval
+        - MDF comum (lugar seco)
+        - Madeira maciça
+    validations:
+      required: true
+  - type: textarea
+    id: extras
+    attributes:
+      label: Extras
+      description: Cor, puxador, ferramentas que você tem, qualquer detalhe.

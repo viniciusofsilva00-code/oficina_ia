@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projeto · oficina_ia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../assets/oficina.css">
+</head>
+<body>
+<!-- página-modelo: scripts/atualizar_indice.py copia este arquivo para cada docs/projetos/<id>/index.html -->
+<header class="top">
+  <div class="top-in">
+    <a class="mark" href="../../"><span class="chip">OF</span>oficina_ia<span class="cursor" aria-hidden="true"></span></a>
+    <span class="endosso">· um projeto vini_lab</span>
+    <nav class="nav" aria-label="Seções">
+      <a href="#premissas">premissas</a><a href="#modelo">3d</a><a href="#corte">corte</a><a href="#plano">chapa</a><a href="#compras">compras</a><a href="#montagem">montagem</a><a href="#acabamento">acabamento</a><a href="#instalacao">instalação</a><a href="#checklist">checklist</a>
+      <a href="#" id="imprimir">imprimir</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="app"><p class="lead">carregando o projeto…</p></main>
+<noscript><p class="wrap">Esta página precisa de JavaScript para montar o projeto.</p></noscript>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="../../assets/iso.js"></script>
+<script src="../../assets/projeto.js"></script>
+<script>document.getElementById("imprimir").addEventListener("click", function (e) { e.preventDefault(); window.print(); });</script>
+</body>
+</html>

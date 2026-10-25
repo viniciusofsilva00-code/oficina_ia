@@ -1,0 +1,227 @@
+{
+  "status": "ok",
+  "erros": [],
+  "avisos": [],
+  "verificacoes": [
+    "Espessura de todas as peças igual à do material",
+    "Nenhuma peça ocupa o lugar de outra (9 peças)",
+    "Medidas externas conferem: 58,0 × 44,0 × 83,0 cm",
+    "Áreas livres respeitadas (3 folgas)",
+    "Largura: 2 laterais + base: 58,0",
+    "Largura: 2 portas + folga do meio: 58,0",
+    "Pia sobra 1 cm de cada lado: 60,0",
+    "Profundidade: corpo + porta: 44,0",
+    "Pia sobra 1 cm na frente das portas: 45,0",
+    "Altura do corpo: rodapé + base + vão interno: 83,0",
+    "Altura das portas: folga de baixo + porta + folga de cima: 83,0",
+    "Altura final: corpo + borda da pia: 85,0",
+    "Vão interno ≥ fundo da cuba + 15 cm para o sifão: 74,2",
+    "Cada peça é montada em exatamente um passo (10 passos)",
+    "Chapas da lista de compras bastam: 1 × MDF RU 18 mm"
+  ],
+  "medidas_reais": {
+    "largura": 58.0,
+    "altura": 83,
+    "profundidade": 44.0
+  },
+  "lista_corte": [
+    {
+      "ids": [
+        "B1"
+      ],
+      "nomes": [
+        "Base"
+      ],
+      "grupo": "Corpo",
+      "material": "mdf18",
+      "material_nome": "MDF RU 18 mm",
+      "comprimento": 54.4,
+      "largura": 42.2,
+      "espessura_mm": 18,
+      "veio": "livre",
+      "bordas": [
+        "C1"
+      ],
+      "fita_cm": 54.4,
+      "qtd": 1
+    },
+    {
+      "ids": [
+        "L1",
+        "L2"
+      ],
+      "nomes": [
+        "Lateral esquerda",
+        "Lateral direita"
+      ],
+      "grupo": "Corpo",
+      "material": "mdf18",
+      "material_nome": "MDF RU 18 mm",
+      "comprimento": 83,
+      "largura": 42.2,
+      "espessura_mm": 18,
+      "veio": "livre",
+      "bordas": [
+        "C1"
+      ],
+      "fita_cm": 166.0,
+      "qtd": 2
+    },
+    {
+      "ids": [
+        "P1",
+        "P2"
+      ],
+      "nomes": [
+        "Porta esquerda",
+        "Porta direita"
+      ],
+      "grupo": "Portas",
+      "material": "mdf18",
+      "material_nome": "MDF RU 18 mm",
+      "comprimento": 75.2,
+      "largura": 28.9,
+      "espessura_mm": 18,
+      "veio": "livre",
+      "bordas": [
+        "C1",
+        "C2",
+        "L1",
+        "L2"
+      ],
+      "fita_cm": 416.4,
+      "qtd": 2
+    },
+    {
+      "ids": [
+        "R1",
+        "R2"
+      ],
+      "nomes": [
+        "Rodapé de trás",
+        "Rodapé da frente"
+      ],
+      "grupo": "Rodapé",
+      "material": "mdf18",
+      "material_nome": "MDF RU 18 mm",
+      "comprimento": 54.4,
+      "largura": 7,
+      "espessura_mm": 18,
+      "veio": "livre",
+      "bordas": [],
+      "fita_cm": 0.0,
+      "qtd": 2
+    },
+    {
+      "ids": [
+        "T1",
+        "T2"
+      ],
+      "nomes": [
+        "Travessa de cima, atrás",
+        "Travessa de cima, frente"
+      ],
+      "grupo": "Travessas",
+      "material": "mdf18",
+      "material_nome": "MDF RU 18 mm",
+      "comprimento": 54.4,
+      "largura": 10,
+      "espessura_mm": 18,
+      "veio": "livre",
+      "bordas": [],
+      "fita_cm": 0.0,
+      "qtd": 2
+    }
+  ],
+  "fita_total_m": 6.37,
+  "plano_corte": [
+    {
+      "material": "mdf18",
+      "nome": "MDF RU 18 mm",
+      "chapa": {
+        "comprimento": 275,
+        "largura": 184
+      },
+      "chapas": [
+        {
+          "pecas": [
+            {
+              "id": "L1",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 83,
+              "l": 42.2,
+              "girada": false
+            },
+            {
+              "id": "L2",
+              "x": 84.3,
+              "y": 1.0,
+              "c": 83,
+              "l": 42.2,
+              "girada": false
+            },
+            {
+              "id": "B1",
+              "x": 167.6,
+              "y": 1.0,
+              "c": 54.4,
+              "l": 42.2,
+              "girada": false
+            },
+            {
+              "id": "P1",
+              "x": 1.0,
+              "y": 43.5,
+              "c": 75.2,
+              "l": 28.9,
+              "girada": false
+            },
+            {
+              "id": "P2",
+              "x": 76.5,
+              "y": 43.5,
+              "c": 75.2,
+              "l": 28.9,
+              "girada": false
+            },
+            {
+              "id": "T1",
+              "x": 152.0,
+              "y": 43.5,
+              "c": 54.4,
+              "l": 10,
+              "girada": false
+            },
+            {
+              "id": "T2",
+              "x": 206.7,
+              "y": 43.5,
+              "c": 54.4,
+              "l": 10,
+              "girada": false
+            },
+            {
+              "id": "R1",
+              "x": 1.0,
+              "y": 72.7,
+              "c": 54.4,
+              "l": 7,
+              "girada": false
+            },
+            {
+              "id": "R2",
+              "x": 55.7,
+              "y": 72.7,
+              "c": 54.4,
+              "l": 7,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.306
+        }
+      ]
+    }
+  ],
+  "gerado_em": "2026-10-25T19:06:05+00:00"
+}

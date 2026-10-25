@@ -1,0 +1,7 @@
+work/
+__pycache__/
+*.pyc
+tests/capturas/
+tests/vendor/
+tests/tmp/
+.DS_Store

@@ -1,0 +1,157 @@
+name: gerar-projeto
+
+on:
+  issues:
+    types: [opened]
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+  id-token: write
+
+# um projeto por vez: dois pedidos ao mesmo tempo esperam na fila
+concurrency:
+  group: oficina-gerar-projeto
+  cancel-in-progress: false
+
+jobs:
+  gerar:
+    # portão de custo: rótulo "projeto" + autor listado em USUARIOS_PERMITIDOS (logins separados por vírgula, sem espaço)
+    if: >-
+      contains(github.event.issue.labels.*.name, 'projeto') &&
+      !github.event.issue.pull_request &&
+      contains(format(',{0},', vars.USUARIOS_PERMITIDOS), format(',{0},', github.actor)) &&
+      (github.event_name == 'issues' || startsWith(github.event.comment.body, 'ajuste'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ISSUE: ${{ github.event.issue.number }}
+      RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Avisar na issue
+        run: |
+          gh issue comment "$ISSUE" --body "Recebi o pedido. Estou montando o projeto; leva uns 5 a 10 minutos. Acompanhe aqui: $RUN_URL"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install --quiet pillow pillow-heif
+
+      # título e corpo da issue entram pelo arquivo do evento, nunca interpolados no shell
+      - name: Preparar pedido
+        id: pedido
+        env:
+          USUARIOS_PERMITIDOS: ${{ vars.USUARIOS_PERMITIDOS }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/preparar_pedido.py
+
+      - name: Gerar projeto com Claude
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ github.token }}
+          prompt: |
+            Leia prompt/gerar-projeto.md e cumpra o contrato.
+            O pedido está em work/pedido.md. Pasta do projeto: ${{ steps.pedido.outputs.pasta }}
+          claude_args: >-
+            --model ${{ vars.MODELO_CLAUDE || 'sonnet' }}
+            --max-turns 40
+            --allowedTools "Read,Write,Edit,Glob,Grep,Bash(python3 scripts/validar_projeto.py:*),Bash(python scripts/validar_projeto.py:*)"
+
+      - name: Ver se ficaram perguntas
+        id: perguntas
+        run: |
+          if [ -s work/perguntas.md ]; then echo "tem=1" >> "$GITHUB_OUTPUT"; else echo "tem=0" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Responder perguntas
+        if: steps.perguntas.outputs.tem == '1'
+        run: |
+          {
+            echo "Antes de montar o projeto, preciso de mais informação:"
+            echo
+            cat work/perguntas.md
+            echo
+            echo "Responda num comentário que comece com **ajuste:** (por exemplo, \`ajuste: a pia tem 50 cm de largura\`) e eu refaço."
+          } > work/comentario.md
+          gh issue comment "$ISSUE" --body-file work/comentario.md
+
+      - name: Validar
+        id: validar
+        if: steps.perguntas.outputs.tem == '0'
+        env:
+          PASTA: ${{ steps.pedido.outputs.pasta }}
+        run: |
+          set +e
+          python scripts/validar_projeto.py "$PASTA" > work/validacao.txt 2>&1
+          codigo=$?
+          cat work/validacao.txt
+          echo "codigo=$codigo" >> "$GITHUB_OUTPUT"
+          if [ "$codigo" = "2" ]; then exit 1; fi
+
+      - name: Atualizar índice
+        if: steps.perguntas.outputs.tem == '0'
+        run: python scripts/atualizar_indice.py
+
+      - name: Commit e push
+        if: steps.perguntas.outputs.tem == '0'
+        env:
+          PASTA: ${{ steps.pedido.outputs.pasta }}
+          ID: ${{ steps.pedido.outputs.id }}
+          MODO: ${{ steps.pedido.outputs.modo }}
+        run: |
+          git config user.name "oficina_ia"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # só a pasta do projeto e o índice entram no commit
+          git add "$PASTA" docs/projetos/indice.json
+          if git diff --cached --quiet; then echo "nada mudou"; exit 0; fi
+          git commit -m "projeto $ID ($MODO) · issue #$ISSUE"
+          for tentativa in 1 2 3; do
+            if git push; then exit 0; fi
+            echo "push recusado; tentando de novo ($tentativa)"
+            sleep $((tentativa * 5))
+            git pull --rebase || { git rebase --abort; python scripts/atualizar_indice.py; git add docs/projetos/indice.json; git pull --rebase -X theirs; }
+          done
+          exit 1
+
+      - name: Responder com o link
+        if: steps.perguntas.outputs.tem == '0'
+        env:
+          ID: ${{ steps.pedido.outputs.id }}
+          CODIGO: ${{ steps.validar.outputs.codigo }}
+        run: |
+          dono="${GITHUB_REPOSITORY%%/*}"; repo="${GITHUB_REPOSITORY#*/}"
+          link="https://${dono,,}.github.io/${repo}/projetos/${ID}/"
+          if [ "$CODIGO" = "0" ]; then
+            {
+              echo "Projeto pronto: $link"
+              echo
+              echo "A página leva cerca de 1 minuto para atualizar. Antes de cortar, confira as **premissas** no topo da página."
+              echo "Para mudar algo, comente aqui começando com **ajuste:**."
+            } > work/comentario.md
+            gh issue edit "$ISSUE" --add-label pronto || true
+          else
+            {
+              echo "Publiquei o projeto, mas ele **não fechou**. Não corte nada ainda: $link"
+              echo
+              echo "O que o validador encontrou:"
+              echo '```'
+              grep -E '^- ' work/validacao.txt | head -20
+              echo '```'
+              echo "Comente com **ajuste:** e o que mudar, ou espere eu revisar."
+            } > work/comentario.md
+          fi
+          gh issue comment "$ISSUE" --body-file work/comentario.md
+
+      - name: Avisar falha
+        if: failure()
+        run: |
+          gh issue comment "$ISSUE" --body "Algo deu errado ao gerar o projeto. Veja o registro em $RUN_URL e tente de novo comentando **ajuste:** com o que quiser."

@@ -1,0 +1,150 @@
+{
+  "versao": 1,
+  "id": "001-gabinete-pia-60",
+  "titulo": "Gabinete da pia 60",
+  "resumo": "Gabinete de piso em MDF RU com 2 portas e rodapé recuado. Segura a pia de sobrepor de 60 × 45 cm pela borda e deixa a cuba e o sifão livres por baixo.",
+  "pedido_original": "Gabinete de madeira para receber a pia das fotos: lavatório de sobrepor em mármore sintético, 60 cm de largura, cuba oval, torneira de mesa no canto de trás à esquerda. Banheiro, encostado na parede.",
+  "data": "2026-10-25",
+  "dificuldade": 2,
+  "tempo": "2 fins de semana · cerca de 10 h de trabalho + 3 dias de secagem da tinta",
+  "dimensoes_externas": {"largura": 58, "altura": 83, "profundidade": 44},
+
+  "medidas_conhecidas": [
+    {"nome": "Largura total da pia", "valor": 60, "unidade": "cm", "fonte": "Trena nas fotos do pedido, borda a borda incluindo o rebordo."},
+    {"nome": "Profundidade total da pia", "valor": 45, "unidade": "cm", "fonte": "Trena nas fotos do pedido; a leitura ficou entre 44,5 e 45 cm. Confirme antes do corte."}
+  ],
+  "premissas": [
+    {"nome": "Fundo da cuba abaixo do topo da pia", "valor": 18, "unidade": "cm", "como_conferir": "Apoie a pia de lado sobre um pano, encoste uma régua no tampo e meça até o ponto mais baixo da cuba por fora."},
+    {"nome": "Espessura da borda da pia", "valor": 2, "unidade": "cm", "como_conferir": "Na beirada da frente, meça de cima até a face de baixo da borda."},
+    {"nome": "Altura final (chão até o topo da pia)", "valor": 85, "unidade": "cm", "como_conferir": "85 cm serve para a maioria dos adultos. Para outra altura, avise no pedido de ajuste."},
+    {"nome": "Cuba por baixo: largura × comprimento", "valor": "46 × 32", "unidade": "cm", "como_conferir": "Com a pia de cabeça para baixo, meça a cuba por fora nos dois sentidos."},
+    {"nome": "Começo da cuba a partir da beirada da frente", "valor": 6, "unidade": "cm", "como_conferir": "Pia virada: meça da beirada da frente até onde a cuba começa a descer."},
+    {"nome": "Esgoto e água na parede de trás", "valor": "50 a 60", "unidade": "cm do chão", "como_conferir": "Meça do piso até o centro do cano de esgoto e do registro."},
+    {"nome": "Pia em canto (parede atrás e à esquerda)", "valor": "sim", "unidade": "", "como_conferir": "Os rebordos na traseira e na lateral esquerda indicam canto. Se não houver parede à esquerda, nada muda no móvel."}
+  ],
+  "perguntas": [],
+
+  "conferencias": [
+    {"descricao": "Largura: 2 laterais + base", "soma": [1.8, 54.4, 1.8], "esperado": 58},
+    {"descricao": "Largura: 2 portas + folga do meio", "soma": [28.9, 0.2, 28.9], "esperado": 58},
+    {"descricao": "Pia sobra 1 cm de cada lado", "soma": [1, 58, 1], "esperado": 60},
+    {"descricao": "Profundidade: corpo + porta", "soma": [42.2, 1.8], "esperado": 44},
+    {"descricao": "Pia sobra 1 cm na frente das portas", "soma": [44, 1], "esperado": 45},
+    {"descricao": "Altura do corpo: rodapé + base + vão interno", "soma": [7, 1.8, 74.2], "esperado": 83},
+    {"descricao": "Altura das portas: folga de baixo + porta + folga de cima", "soma": [7.4, 75.2, 0.4], "esperado": 83},
+    {"descricao": "Altura final: corpo + borda da pia", "soma": [83, 2], "esperado": 85},
+    {"descricao": "Vão interno ≥ fundo da cuba + 15 cm para o sifão", "soma": [74.2], "minimo": 33}
+  ],
+
+  "materiais": [
+    {"id": "mdf18", "nome": "MDF RU 18 mm", "tipo": "chapa", "espessura_mm": 18, "chapa": {"comprimento": 275, "largura": 184}, "veio": false}
+  ],
+
+  "pecas": [
+    {"id": "L1", "nome": "Lateral esquerda", "grupo": "Corpo", "material": "mdf18", "caixa": [0, 0, 0, 1.8, 83, 42.2], "veio": "livre", "bordas": ["C1"], "obs": "Fita na borda da frente. Vai do chão até o topo."},
+    {"id": "L2", "nome": "Lateral direita", "grupo": "Corpo", "material": "mdf18", "caixa": [56.2, 0, 0, 1.8, 83, 42.2], "veio": "livre", "bordas": ["C1"], "obs": "Fita na borda da frente."},
+    {"id": "R1", "nome": "Rodapé de trás", "grupo": "Rodapé", "material": "mdf18", "caixa": [1.8, 0, 0, 54.4, 7, 1.8], "veio": "livre", "bordas": [], "obs": ""},
+    {"id": "R2", "nome": "Rodapé da frente", "grupo": "Rodapé", "material": "mdf18", "caixa": [1.8, 0, 35.4, 54.4, 7, 1.8], "veio": "livre", "bordas": [], "obs": "Recuado 5 cm da frente do corpo."},
+    {"id": "B1", "nome": "Base", "grupo": "Corpo", "material": "mdf18", "caixa": [1.8, 7, 0, 54.4, 1.8, 42.2], "veio": "livre", "bordas": ["C1"], "obs": "Apoia nos dois rodapés. Fita na borda da frente."},
+    {"id": "T1", "nome": "Travessa de cima, atrás", "grupo": "Travessas", "material": "mdf18", "caixa": [1.8, 73, 0, 54.4, 10, 1.8], "veio": "livre", "bordas": [], "obs": "Em pé, rente ao topo. Prende o móvel na parede."},
+    {"id": "T2", "nome": "Travessa de cima, frente", "grupo": "Travessas", "material": "mdf18", "caixa": [1.8, 73, 40.4, 54.4, 10, 1.8], "veio": "livre", "bordas": [], "obs": "Em pé, rente ao topo, para não bater na cuba."},
+    {"id": "P1", "nome": "Porta esquerda", "grupo": "Portas", "material": "mdf18", "caixa": [0, 7.4, 42.2, 28.9, 75.2, 1.8], "veio": "livre", "bordas": ["C1", "C2", "L1", "L2"], "obs": "Sobreposta: cobre a lateral inteira."},
+    {"id": "P2", "nome": "Porta direita", "grupo": "Portas", "material": "mdf18", "caixa": [29.1, 7.4, 42.2, 28.9, 75.2, 1.8], "veio": "livre", "bordas": ["C1", "C2", "L1", "L2"], "obs": "Sobreposta: cobre a lateral inteira."}
+  ],
+
+  "referencias": [
+    {"id": "pia", "nome": "Tampo da pia (60 × 45 cm)", "tipo": "caixa", "caixa": [-1, 83, 0, 60, 2, 45]},
+    {"id": "cuba", "nome": "Cuba oval (46 × 32 cm, premissa)", "tipo": "cuba", "caixa": [6, 67, 7, 46, 16, 32]},
+    {"id": "torneira", "nome": "Torneira de mesa", "tipo": "cilindro", "eixo": "y", "caixa": [5.5, 85, 5.5, 3, 14, 3]},
+    {"id": "esgoto", "nome": "Cano de esgoto na parede", "tipo": "cilindro", "eixo": "z", "caixa": [26.5, 52.5, -3, 5, 5, 6]}
+  ],
+
+  "folgas": [
+    {"id": "f-cuba", "nome": "Espaço da cuba", "caixa": [6, 67, 7, 46, 16, 32]},
+    {"id": "f-sifao", "nome": "Espaço do sifão", "caixa": [19, 8.8, 8, 20, 58.2, 22]},
+    {"id": "f-canos", "nome": "Passagem do esgoto e da água", "caixa": [14, 45, 0, 30, 20, 6]}
+  ],
+
+  "compras": [
+    {"categoria": "Chapas", "item": "MDF RU 18 mm, chapa 275 × 184 cm", "quantidade": 1, "unidade": "chapa", "material": "mdf18", "obs": "RU = resistente à umidade (miolo verde). Muitas lojas cortam as peças se você levar a lista de corte."},
+    {"categoria": "Acabamento", "item": "Fita de borda PVC 22 mm pré-colada", "quantidade": 8, "unidade": "m", "tipo": "fita_borda", "obs": "6,4 m de bordas + sobra."},
+    {"categoria": "Acabamento", "item": "Fundo preparador para MDF à base d'água, 0,9 L", "quantidade": 1, "unidade": "lata"},
+    {"categoria": "Acabamento", "item": "Esmalte à base d'água acetinado, 0,9 L", "quantidade": 2, "unidade": "latas", "obs": "3,1 m² × 3 demãos ÷ 10 m² por litro ≈ 0,9 L."},
+    {"categoria": "Acabamento", "item": "Lixa grão 220", "quantidade": 3, "unidade": "folhas"},
+    {"categoria": "Acabamento", "item": "Silicone neutro incolor antimofo, 280 g", "quantidade": 1, "unidade": "tubo"},
+    {"categoria": "Fixação", "item": "Parafuso para madeira cabeça chata 4,0 × 40 mm", "quantidade": 40, "unidade": "un", "obs": "30 usados: 8 laterais na base, 8 travessas, 8 rodapés, 6 base nos rodapés."},
+    {"categoria": "Fixação", "item": "Cavilha de madeira 8 × 30 mm", "quantidade": 8, "unidade": "un", "obs": "4 na base, 4 nas travessas."},
+    {"categoria": "Fixação", "item": "Cola de madeira PVA D3 (resistente à água), 500 g", "quantidade": 1, "unidade": "frasco"},
+    {"categoria": "Fixação", "item": "Parafuso 5,0 × 50 mm + bucha nº 6", "quantidade": 2, "unidade": "conjuntos", "obs": "Prendem a travessa T1 na parede."},
+    {"categoria": "Ferragens", "item": "Dobradiça de caneco 35 mm reta (sobreposição total) com calço", "quantidade": 4, "unidade": "un", "obs": "2 por porta."},
+    {"categoria": "Ferragens", "item": "Parafuso 3,5 × 14 mm cabeça panela", "quantidade": 16, "unidade": "un", "obs": "Para as dobradiças, se não vierem junto."},
+    {"categoria": "Ferragens", "item": "Puxador alça 96 mm com parafusos", "quantidade": 2, "unidade": "un"},
+    {"categoria": "Hidráulica", "item": "Válvula de escoamento 1\" para lavatório", "quantidade": 1, "unidade": "un", "obs": "Se a pia não trouxer."},
+    {"categoria": "Hidráulica", "item": "Sifão universal ajustável 1\" × 1.1/2\"", "quantidade": 1, "unidade": "un"},
+    {"categoria": "Hidráulica", "item": "Flexível 40 cm 1/2\"", "quantidade": 1, "unidade": "un"},
+    {"categoria": "Hidráulica", "item": "Fita veda-rosca 18 mm", "quantidade": 1, "unidade": "rolo"}
+  ],
+
+  "ferramentas": [
+    {"nome": "Serra circular ou tico-tico", "uso": "Cortes retos, com uma régua de alumínio presa por grampos como guia."},
+    {"nome": "2 grampos sargento de 30 cm", "uso": "Seguram a guia e as peças na colagem."},
+    {"nome": "Trena, esquadro e lápis", "uso": "Medir, marcar e conferir os 90°."},
+    {"nome": "Furadeira/parafusadeira", "uso": "Pré-furos e parafusos."},
+    {"nome": "Brocas 3 mm, 8 mm e escareador", "uso": "Pré-furo, cavilha e rebaixo da cabeça do parafuso."},
+    {"nome": "Broca Forstner 35 mm", "uso": "Furo do caneco das dobradiças."},
+    {"nome": "Broca de concreto 6 mm", "uso": "Furos das buchas na parede."},
+    {"nome": "Ferro de passar velho e estilete", "uso": "Aplicar e aparar a fita de borda."},
+    {"nome": "Nível de bolha", "uso": "Nivelar o móvel."},
+    {"nome": "Rolo de espuma e pincel", "uso": "Pintura."},
+    {"nome": "Óculos, protetor de ouvido e máscara", "uso": "Proteção no corte e na lixa."}
+  ],
+
+  "passos": [
+    {"titulo": "Separe e marque as peças", "pecas": [], "texto": "Espalhe as 9 peças no chão e meça cada uma contra a lista de corte.\n\nEscreva o código (L1, P1…) a lápis na face que fica para dentro.", "erro_comum": "Trocar lateral com porta. A porta é mais estreita (28,9 cm) e mais baixa (75,2 cm)."},
+    {"titulo": "Aplique a fita de borda", "pecas": [], "texto": "- Lixe as bordas com lixa 220.\n- Aplique a fita na frente das laterais, na frente da base e nas 4 bordas das portas.\n- Passe o ferro na temperatura de algodão e esfregue um pano enquanto esfria.\n- Corte a sobra com o estilete deitado.", "erro_comum": "Ferro quente demais derrete o PVC. Se não grudar, aumente aos poucos."},
+    {"titulo": "Monte o rodapé e a base", "pecas": ["R1", "R2", "B1"], "texto": "Os rodapés ficam em pé embaixo da base: R1 rente à borda de trás, R2 recuado 5 cm da frente.\n\n- Faça 3 pré-furos de 3 mm na base sobre cada rodapé.\n- Cola na borda de cima dos rodapés, apoie a base e parafuse.", "erro_comum": "Colocar o rodapé da frente rente à borda. Ele fica 5 cm para dentro para caber a ponta do pé."},
+    {"titulo": "Prenda a primeira lateral", "pecas": ["L1"], "texto": "A lateral vai do chão ao topo e cobre a ponta da base e dos rodapés.\n\n- 2 cavilhas entre a base e a lateral.\n- 4 parafusos pela lateral na base e 2 em cada rodapé.\n- Pré-furo de 3 mm e escareador por fora.", "erro_comum": "Parafuso torto que sai pela face da base. Segure o esquadro ao lado da broca."},
+    {"titulo": "Prenda a segunda lateral", "pecas": ["L2"], "texto": "Repita do outro lado. Deite o conjunto de lado para parafusar com o peso a seu favor.\n\nA frente da base e a das laterais ficam na mesma linha: passe a mão, não pode ter degrau.", "erro_comum": "Montar a lateral com a fita virada para trás. A fita sempre fica na frente."},
+    {"titulo": "Coloque as travessas de cima", "pecas": ["T1", "T2"], "texto": "As duas travessas ficam em pé, rentes ao topo: T1 na borda de trás, T2 na borda da frente. A pia apoia nelas e nas laterais.\n\n- 1 cavilha e 2 parafusos em cada ponta.\n- Antes da cola secar, meça as diagonais da frente. Se forem iguais, o móvel está no esquadro.", "erro_comum": "Deixar a travessa abaixo do topo. Passe uma régua: laterais e travessas no mesmo plano, senão a pia balança."},
+    {"titulo": "Pinte o corpo", "pecas": [], "texto": "Siga a seção de acabamento: 1 demão de fundo preparador e 3 de esmalte, por dentro e por fora. Pinte as portas deitadas, separadas.", "erro_comum": "Pular a borda de baixo das laterais e do rodapé. É por ali que a água do piso entra."},
+    {"titulo": "Fure o caneco e instale as dobradiças", "pecas": [], "texto": "- Marque o centro do furo a 2,2 cm da borda da porta (lado da lateral) e a 10 cm do topo e da base.\n- Fure com a Forstner 35 mm até 12 mm de fundo. Fita crepe na broca a 12 mm serve de limite.\n- Encaixe a dobradiça e parafuse com 3,5 × 14 mm.", "erro_comum": "Furar fundo demais e atravessar a porta de 18 mm. Pare a cada 3 mm e meça."},
+    {"titulo": "Pendure as portas e ponha os puxadores", "pecas": ["P1", "P2"], "texto": "Com a porta encostada no corpo, marque e parafuse o calço de cada dobradiça na lateral. Regule pelos parafusos da dobradiça até a folga do meio ficar igual de cima a baixo (2 mm).\n\nPuxador na vertical, a 4 cm da borda do meio e 6 cm abaixo do topo da porta.", "erro_comum": "Apertar tudo antes de alinhar. Deixe a regulagem solta até as duas portas fecharem certas."},
+    {"titulo": "Nivele e prenda na parede", "pecas": [], "texto": "Encoste o móvel na parede, centrado com os canos, e confira o nível em cima das laterais nos dois sentidos.\n\nFure a parede pela travessa T1: 2 furos de 6 mm a 10 cm de cada lateral, bucha nº 6 e parafuso 5,0 × 50 mm.", "erro_comum": "Furar um cano. Os canos sobem na vertical a partir dos pontos de água: fure longe dessa linha."}
+  ],
+
+  "acabamento": [
+    {"titulo": "Preparar", "texto": "Lixe tudo com 220 e tire o pó com pano úmido bem torcido."},
+    {"titulo": "Fundo preparador", "texto": "1 demão em faces e bordas. Secagem: 4 h."},
+    {"titulo": "Esmalte à base d'água", "texto": "3 demãos finas com rolo de espuma, lixa 220 bem de leve entre elas. Secagem: 4 h entre demãos; cura para receber água: 72 h."},
+    {"titulo": "Onde caprichar", "texto": "- Borda de baixo das laterais e dos rodapés: tocam o piso molhado.\n- Topo das laterais e travessas: ficam sob a borda da pia.\n- Bordas sem fita: o miolo do MDF puxa água. Todas recebem as 3 demãos."},
+    {"titulo": "Silicone", "texto": "- Entre a pia e o topo do móvel, cordão contínuo.\n- Entre o rebordo da pia e as paredes.\n- Junta das laterais com o piso, na frente.\n\nO fundo fica aberto: é a ventilação e o acesso ao sifão."}
+  ],
+  "instalacao": [
+    {"titulo": "Fixar a pia", "texto": "- Espere a cura da tinta (72 h).\n- Teste a pia sem silicone: sobra 1 cm dos lados e 1 cm na frente das portas, e a cuba não encosta nas travessas.\n- Instale a válvula e a torneira na pia antes de assentar.\n- Cordão de silicone de 5 mm no topo das laterais e travessas, baixe a pia reta e aperte. 24 h sem usar."},
+    {"titulo": "Ligar água e esgoto", "texto": "- Feche o registro geral.\n- 6 voltas de veda-rosca no ponto de água; rosqueie o flexível na mão e dê 1/4 de volta com a chave.\n- Encaixe o sifão na válvula e ajuste até a saída entrar no cano da parede. A curva fica mais baixa que as pontas.\n- Porcas do sifão só na mão: plástico trinca com chave."},
+    {"titulo": "Testar vazamento", "texto": "- Abra o registro devagar e olhe o flexível por 1 minuto.\n- Encha a cuba até a metade e solte de uma vez.\n- Passe papel toalha seco em cada conexão; mancha é vazamento: aperte 1/4 de volta.\n- Deixe papel toalha na base por 24 h. Seco, está pronto."}
+  ],
+  "checklist": [
+    "Todas as premissas foram medidas antes do corte.",
+    "O selo da página diz medidas conferidas.",
+    "O móvel está no nível nos dois sentidos e preso na parede pela T1.",
+    "As portas abrem e fecham sem raspar, com folga igual no meio.",
+    "A tinta curou por 72 h antes da pia receber água.",
+    "O silicone entre a pia e o móvel curou por 24 h.",
+    "A cuba não encosta em nenhuma travessa.",
+    "O teste do papel toalha passou 24 h sem mancha."
+  ],
+  "glossario": [
+    {"termo": "MDF RU", "definicao": "Chapa de fibra de madeira resistente à umidade; o miolo é verde."},
+    {"termo": "Fita de borda", "definicao": "Tira fina com cola que cobre o miolo da chapa e impede a água de entrar."},
+    {"termo": "Rodapé recuado", "definicao": "Base baixa, mais para dentro que a frente do móvel, para caber a ponta do pé."},
+    {"termo": "Cavilha", "definicao": "Pino de madeira que entra em furos nas duas peças para alinhar e reforçar a junção."},
+    {"termo": "Pré-furo", "definicao": "Furo fino feito antes do parafuso para a chapa não rachar."},
+    {"termo": "Escareador", "definicao": "Broca que abre um rebaixo para a cabeça do parafuso ficar rente."},
+    {"termo": "Dobradiça de caneco", "definicao": "Dobradiça escondida que entra num furo redondo de 35 mm na porta."},
+    {"termo": "Sifão", "definicao": "Cano curvo embaixo da pia que guarda água e bloqueia o cheiro do esgoto."},
+    {"termo": "Flexível", "definicao": "Mangueira trançada que liga a torneira ao ponto de água."},
+    {"termo": "Refilo", "definicao": "Corte fino na borda da chapa, que costuma vir torta da fábrica."}
+  ],
+  "fotos": []
+}
