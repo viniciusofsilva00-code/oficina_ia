@@ -1,0 +1,533 @@
+{
+  "versao": 1,
+  "id": "002-teste-do-sistema-estante-simples-de-pare",
+  "titulo": "Estante de parede com 3 vãos",
+  "resumo": "Estante aberta em MDF 18 mm, com 2 laterais, base, topo e 2 prateleiras. Fica presa na parede por uma travessa atrás e tem 3 vãos de cerca de 31 cm para livros.",
+  "pedido_original": "[teste do sistema] Estante simples de parede com 3 vãos, sem portas, para livros. Largura 80 cm, altura 100 cm, profundidade 30 cm, 2 prateleiras internas. Sala, encostada na parede. MDF comum (lugar seco).",
+  "data": "2026-10-25",
+  "dificuldade": 1,
+  "tempo": "1 fim de semana · cerca de 5 h + 1 dia de secagem do verniz",
+  "dimensoes_externas": {
+    "largura": 80,
+    "altura": 100,
+    "profundidade": 30
+  },
+  "medidas_conhecidas": [
+    {
+      "nome": "Largura externa",
+      "valor": 80,
+      "unidade": "cm",
+      "fonte": "Formulário e foto-01.jpg (desenho com cota de 80 cm)."
+    },
+    {
+      "nome": "Altura externa",
+      "valor": 100,
+      "unidade": "cm",
+      "fonte": "Formulário e foto-01.jpg (desenho com cota de 100 cm)."
+    },
+    {
+      "nome": "Profundidade externa",
+      "valor": 30,
+      "unidade": "cm",
+      "fonte": "Formulário e foto-01.jpg (título do desenho: profundidade 30 cm)."
+    }
+  ],
+  "premissas": [
+    {
+      "nome": "Espessura do MDF",
+      "valor": 18,
+      "unidade": "mm",
+      "como_conferir": "Meça a chapa na loja com paquímetro ou trena na borda. Se vier 15 mm, avise no pedido de ajuste."
+    },
+    {
+      "nome": "Altura de cada vão",
+      "valor": "31 / 31 / 30,8",
+      "unidade": "cm",
+      "como_conferir": "Meça seus livros mais altos em pé. Se algum passar de 30 cm, ele não cabe no vão de cima."
+    },
+    {
+      "nome": "Parede lisa e firme (alvenaria)",
+      "valor": "sim",
+      "unidade": "",
+      "como_conferir": "Bata na parede: som oco indica gesso ou drywall, que pede bucha própria."
+    },
+    {
+      "nome": "Rodapé da parede",
+      "valor": "sem rodapé alto",
+      "unidade": "",
+      "como_conferir": "Se a parede tem rodapé de mais de 1 cm, a estante não encosta. Meça a altura e a saliência dele."
+    },
+    {
+      "nome": "Sem fundo fechado",
+      "valor": "sim",
+      "unidade": "",
+      "como_conferir": "Os livros encostam direto na parede. Se quiser fundo, peça no ajuste."
+    }
+  ],
+  "perguntas": [],
+  "conferencias": [
+    {
+      "descricao": "Largura: laterais + prateleiras",
+      "soma": [
+        1.8,
+        76.4,
+        1.8
+      ],
+      "esperado": 80
+    },
+    {
+      "descricao": "Altura: 4 tampos de 1,8 cm + 3 vãos",
+      "soma": [
+        1.8,
+        31,
+        1.8,
+        31,
+        1.8,
+        30.8,
+        1.8
+      ],
+      "esperado": 100
+    },
+    {
+      "descricao": "Profundidade: lateral e prateleiras no mesmo plano",
+      "soma": [
+        30
+      ],
+      "esperado": 30
+    },
+    {
+      "descricao": "Vão mais baixo ≥ 28 cm para livros comuns",
+      "soma": [
+        30.8
+      ],
+      "minimo": 28
+    }
+  ],
+  "materiais": [
+    {
+      "id": "mdf18",
+      "nome": "MDF 18 mm",
+      "tipo": "chapa",
+      "espessura_mm": 18,
+      "chapa": {
+        "comprimento": 275,
+        "largura": 184
+      },
+      "veio": false
+    }
+  ],
+  "pecas": [
+    {
+      "id": "L1",
+      "nome": "Lateral esquerda",
+      "grupo": "Corpo",
+      "material": "mdf18",
+      "caixa": [
+        0,
+        0,
+        0,
+        1.8,
+        100,
+        30
+      ],
+      "veio": "livre",
+      "bordas": [
+        "C1"
+      ],
+      "obs": "Fita na borda da frente. Vai do chão ao topo."
+    },
+    {
+      "id": "L2",
+      "nome": "Lateral direita",
+      "grupo": "Corpo",
+      "material": "mdf18",
+      "caixa": [
+        78.2,
+        0,
+        0,
+        1.8,
+        100,
+        30
+      ],
+      "veio": "livre",
+      "bordas": [
+        "C1"
+      ],
+      "obs": "Fita na borda da frente."
+    },
+    {
+      "id": "B1",
+      "nome": "Base",
+      "grupo": "Prateleiras",
+      "material": "mdf18",
+      "caixa": [
+        1.8,
+        0,
+        0,
+        76.4,
+        1.8,
+        30
+      ],
+      "veio": "livre",
+      "bordas": [
+        "C1"
+      ],
+      "obs": "Fica entre as laterais, rente ao chão. Fita na borda da frente."
+    },
+    {
+      "id": "P1",
+      "nome": "Prateleira de baixo",
+      "grupo": "Prateleiras",
+      "material": "mdf18",
+      "caixa": [
+        1.8,
+        32.8,
+        0,
+        76.4,
+        1.8,
+        30
+      ],
+      "veio": "livre",
+      "bordas": [
+        "C1"
+      ],
+      "obs": "Fita na borda da frente."
+    },
+    {
+      "id": "P2",
+      "nome": "Prateleira de cima",
+      "grupo": "Prateleiras",
+      "material": "mdf18",
+      "caixa": [
+        1.8,
+        65.6,
+        0,
+        76.4,
+        1.8,
+        30
+      ],
+      "veio": "livre",
+      "bordas": [
+        "C1"
+      ],
+      "obs": "Fita na borda da frente."
+    },
+    {
+      "id": "T1",
+      "nome": "Topo",
+      "grupo": "Prateleiras",
+      "material": "mdf18",
+      "caixa": [
+        1.8,
+        98.2,
+        0,
+        76.4,
+        1.8,
+        30
+      ],
+      "veio": "livre",
+      "bordas": [
+        "C1"
+      ],
+      "obs": "Rente ao topo das laterais. Fita na borda da frente."
+    },
+    {
+      "id": "TR1",
+      "nome": "Travessa de fixação",
+      "grupo": "Travessas",
+      "material": "mdf18",
+      "caixa": [
+        1.8,
+        88.2,
+        0,
+        76.4,
+        10,
+        1.8
+      ],
+      "veio": "livre",
+      "bordas": [],
+      "obs": "Em pé, encostada na parede, logo abaixo do topo. Recebe os parafusos da parede."
+    }
+  ],
+  "referencias": [],
+  "folgas": [
+    {
+      "id": "f-vao1",
+      "nome": "Vão de baixo (livros)",
+      "caixa": [
+        1.8,
+        1.8,
+        0,
+        76.4,
+        31,
+        30
+      ]
+    },
+    {
+      "id": "f-vao2",
+      "nome": "Vão do meio (livros)",
+      "caixa": [
+        1.8,
+        34.6,
+        0,
+        76.4,
+        31,
+        30
+      ]
+    },
+    {
+      "id": "f-vao3",
+      "nome": "Vão de cima (livros)",
+      "caixa": [
+        1.8,
+        67.4,
+        1.8,
+        76.4,
+        30.8,
+        28.2
+      ]
+    }
+  ],
+  "compras": [
+    {
+      "categoria": "Chapas",
+      "item": "MDF 18 mm, chapa 275 × 184 cm",
+      "quantidade": 1,
+      "unidade": "chapa",
+      "material": "mdf18",
+      "obs": "Sobra bastante. Muitas lojas cortam as peças se você levar a lista de corte."
+    },
+    {
+      "categoria": "Acabamento",
+      "item": "Fita de borda PVC 22 mm pré-colada",
+      "quantidade": 6,
+      "unidade": "m",
+      "tipo": "fita_borda",
+      "obs": "5,06 m de bordas da frente + 10% de sobra."
+    },
+    {
+      "categoria": "Acabamento",
+      "item": "Verniz ou esmalte à base d'água, 0,9 L",
+      "quantidade": 1,
+      "unidade": "lata",
+      "obs": "Cerca de 3 m² × 2 demãos ÷ 10 m² por litro."
+    },
+    {
+      "categoria": "Acabamento",
+      "item": "Lixa grão 220",
+      "quantidade": 2,
+      "unidade": "folhas"
+    },
+    {
+      "categoria": "Fixação",
+      "item": "Parafuso para madeira cabeça chata 4,0 × 40 mm",
+      "quantidade": 40,
+      "unidade": "un",
+      "obs": "28 usados: 24 nas 4 prateleiras e 4 na travessa."
+    },
+    {
+      "categoria": "Fixação",
+      "item": "Cavilha de madeira 8 × 30 mm",
+      "quantidade": 16,
+      "unidade": "un",
+      "obs": "2 em cada ponta das 4 prateleiras."
+    },
+    {
+      "categoria": "Fixação",
+      "item": "Cola de madeira PVA, 250 g",
+      "quantidade": 1,
+      "unidade": "frasco"
+    },
+    {
+      "categoria": "Fixação",
+      "item": "Parafuso 5,0 × 50 mm + bucha nº 6",
+      "quantidade": 3,
+      "unidade": "conjuntos",
+      "obs": "Prendem a travessa TR1 na parede."
+    }
+  ],
+  "ferramentas": [
+    {
+      "nome": "Serra circular ou tico-tico",
+      "uso": "Cortes retos, com uma régua de alumínio presa por grampos como guia. Dispensável se a loja cortar."
+    },
+    {
+      "nome": "2 grampos sargento de 30 cm",
+      "uso": "Seguram a guia e as peças na colagem."
+    },
+    {
+      "nome": "Trena, esquadro e lápis",
+      "uso": "Medir, marcar e conferir os 90°."
+    },
+    {
+      "nome": "Furadeira/parafusadeira",
+      "uso": "Pré-furos e parafusos."
+    },
+    {
+      "nome": "Brocas 3 mm, 8 mm e escareador",
+      "uso": "Pré-furo, cavilha e rebaixo da cabeça do parafuso."
+    },
+    {
+      "nome": "Broca de concreto 6 mm",
+      "uso": "Furos das buchas na parede."
+    },
+    {
+      "nome": "Ferro de passar velho e estilete",
+      "uso": "Aplicar e aparar a fita de borda."
+    },
+    {
+      "nome": "Nível de bolha",
+      "uso": "Nivelar a estante na parede."
+    },
+    {
+      "nome": "Óculos, protetor de ouvido e máscara",
+      "uso": "Proteção no corte e na lixa."
+    }
+  ],
+  "passos": [
+    {
+      "titulo": "Separe e marque as peças",
+      "pecas": [],
+      "texto": "Espalhe as 7 peças no chão e meça cada uma contra a lista de corte.\n\nEscreva o código (L1, P1…) a lápis na face que fica para dentro.",
+      "erro_comum": "Trocar a travessa (76,4 × 10 cm) com uma prateleira (76,4 × 30 cm). Confira a largura."
+    },
+    {
+      "titulo": "Aplique a fita de borda",
+      "pecas": [],
+      "texto": "- Lixe as bordas com lixa 220.\n- Aplique a fita na frente das 2 laterais, da base, das 2 prateleiras e do topo.\n- Passe o ferro na temperatura de algodão e esfregue um pano enquanto esfria.\n- Corte a sobra com o estilete deitado.",
+      "erro_comum": "Ferro quente demais derrete o PVC. Se não grudar, aumente aos poucos."
+    },
+    {
+      "titulo": "Marque a posição das prateleiras",
+      "pecas": [],
+      "texto": "Deite a lateral L1 no chão, face de dentro para cima. Marque a lápis, medindo do chão:\n\n- Base: de 0 a 1,8 cm.\n- Prateleira de baixo: de 32,8 a 34,6 cm.\n- Prateleira de cima: de 65,6 a 67,4 cm.\n- Topo: de 98,2 a 100 cm.\n\nCopie as marcas na L2.",
+      "erro_comum": "Medir a partir da face de cima da base em vez do chão. Todas as marcas partem do chão."
+    },
+    {
+      "titulo": "Prenda a base e o topo na primeira lateral",
+      "pecas": [
+        "L1",
+        "B1",
+        "T1"
+      ],
+      "texto": "Com L1 deitada, encoste a base e o topo nas marcas, com a frente (com fita) alinhada à frente da lateral.\n\n- Pré-furo de 3 mm e escareador por fora da lateral.\n- 2 cavilhas e 3 parafusos 4,0 × 40 em cada peça, com cola na ponta.",
+      "erro_comum": "Parafuso torto que sai pela face da prateleira. Segure o esquadro ao lado da broca."
+    },
+    {
+      "titulo": "Prenda as prateleiras do meio",
+      "pecas": [
+        "P1",
+        "P2"
+      ],
+      "texto": "Encaixe as duas prateleiras nas marcas de L1, frente alinhada.\n\n- 2 cavilhas e 3 parafusos em cada uma, com cola na ponta.\n- Confira o esquadro de cada peça com o esquadro de marceneiro.",
+      "erro_comum": "Inverter as prateleiras: a fita da frente fica sempre virada para o lado de fora."
+    },
+    {
+      "titulo": "Feche com a segunda lateral",
+      "pecas": [
+        "L2"
+      ],
+      "texto": "Passe cola nas pontas livres das 4 peças e encaixe a lateral L2 nas marcas.\n\n- Mesmos furos, cavilhas e parafusos.\n- Em pé, confira as diagonais da frente: se forem iguais, a estante está no esquadro.",
+      "erro_comum": "Fechar sem medir as diagonais. Estante torta não encosta na parede por igual."
+    },
+    {
+      "titulo": "Coloque a travessa de fixação",
+      "pecas": [
+        "TR1"
+      ],
+      "texto": "A travessa fica em pé, encostada na parede, logo abaixo do topo (de 88,2 a 98,2 cm).\n\n- 2 parafusos 4,0 × 40 em cada ponta, pelas laterais.\n- Cola na borda de cima e de baixo, junto ao topo.",
+      "erro_comum": "Colocar a travessa deitada. Em pé ela segura os parafusos da parede."
+    },
+    {
+      "titulo": "Acabamento",
+      "pecas": [],
+      "texto": "Siga a seção de acabamento: lixe, tire o pó e passe 2 demãos de verniz ou esmalte, por dentro e por fora.",
+      "erro_comum": "Pular a borda de baixo da base e das laterais. É por ali que a umidade do piso entra."
+    },
+    {
+      "titulo": "Marque e fure a parede",
+      "pecas": [],
+      "texto": "Encoste a estante na parede, confira o nível em cima do topo e marque pela travessa TR1 três pontos: um no meio e dois a 10 cm de cada lateral.\n\nAfaste a estante e fure com broca de 6 mm. Use um detector de fios ou observe onde passam eletrodutos.",
+      "erro_comum": "Furar sobre cano ou fio. Evite a linha vertical de tomadas e interruptores."
+    },
+    {
+      "titulo": "Fixe na parede",
+      "pecas": [],
+      "texto": "Ponha as buchas nº 6, encoste a estante e parafuse a TR1 com parafusos 5,0 × 50 mm, sem apertar até o fim.\n\nConfira o nível de novo, ajuste e aperte.",
+      "erro_comum": "Apertar o primeiro parafuso antes de nivelar. Depois não dá para corrigir."
+    }
+  ],
+  "acabamento": [
+    {
+      "titulo": "Preparar",
+      "texto": "Lixe tudo com 220 e tire o pó com pano úmido bem torcido."
+    },
+    {
+      "titulo": "Verniz ou esmalte à base d'água",
+      "texto": "2 demãos finas com rolo de espuma, lixa 220 bem de leve entre elas. Secagem: 4 h entre demãos; 24 h antes de guardar livros."
+    },
+    {
+      "titulo": "Onde caprichar",
+      "texto": "- Bordas sem fita: o miolo do MDF puxa umidade. Todas recebem as 2 demãos.\n- Parte de baixo da base: toca o piso."
+    }
+  ],
+  "instalacao": [
+    {
+      "titulo": "Escolha o lugar",
+      "texto": "- Meça a parede livre: precisa de 80 cm de largura e 100 cm de altura.\n- Confira se não há tomada ou interruptor atrás.\n- Se a parede tiver rodapé alto, faça um recorte nele ou afaste a estante."
+    },
+    {
+      "titulo": "Peso dos livros",
+      "texto": "- Distribua os livros mais pesados nos vãos de baixo.\n- Cada prateleira de 76 cm aguenta cerca de 15 kg: não passe disso."
+    }
+  ],
+  "checklist": [
+    "Todas as premissas foram conferidas antes do corte.",
+    "As diagonais da frente são iguais.",
+    "A fita de borda está firme em todas as frentes.",
+    "A estante está no nível nos dois sentidos.",
+    "A travessa TR1 está presa na parede com 3 parafusos.",
+    "O verniz secou por 24 h antes de receber livros."
+  ],
+  "glossario": [
+    {
+      "termo": "MDF",
+      "definicao": "Chapa feita de fibra de madeira prensada, lisa e fácil de cortar. Para lugar seco."
+    },
+    {
+      "termo": "Fita de borda",
+      "definicao": "Tira fina com cola que cobre o miolo da chapa e dá acabamento."
+    },
+    {
+      "termo": "Cavilha",
+      "definicao": "Pino de madeira que entra em furos nas duas peças para alinhar e reforçar a junção."
+    },
+    {
+      "termo": "Pré-furo",
+      "definicao": "Furo fino feito antes do parafuso para a chapa não rachar."
+    },
+    {
+      "termo": "Escareador",
+      "definicao": "Broca que abre um rebaixo para a cabeça do parafuso ficar rente."
+    },
+    {
+      "termo": "Travessa",
+      "definicao": "Tira de chapa que liga as laterais e serve de apoio para prender o móvel na parede."
+    },
+    {
+      "termo": "Vão",
+      "definicao": "Espaço aberto entre duas prateleiras."
+    },
+    {
+      "termo": "Bucha",
+      "definicao": "Peça de plástico que entra no furo da parede e segura o parafuso."
+    },
+    {
+      "termo": "Diagonal",
+      "definicao": "Medida de um canto de cima ao canto oposto de baixo. Se as duas forem iguais, o móvel está no esquadro."
+    }
+  ],
+  "fotos": [
+    "fotos/foto-01.jpg"
+  ]
+}

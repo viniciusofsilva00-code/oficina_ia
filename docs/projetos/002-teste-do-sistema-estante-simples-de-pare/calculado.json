@@ -1,0 +1,165 @@
+{
+  "status": "ok",
+  "erros": [],
+  "avisos": [],
+  "verificacoes": [
+    "Espessura de todas as peças igual à do material",
+    "Nenhuma peça ocupa o lugar de outra (7 peças)",
+    "Medidas externas conferem: 80,0 × 30,0 × 100,0 cm",
+    "Áreas livres respeitadas (3 folgas)",
+    "Largura: laterais + prateleiras: 80,0",
+    "Altura: 4 tampos de 1,8 cm + 3 vãos: 100,0",
+    "Profundidade: lateral e prateleiras no mesmo plano: 30,0",
+    "Vão mais baixo ≥ 28 cm para livros comuns: 30,8",
+    "Cada peça é montada em exatamente um passo (10 passos)",
+    "Chapas da lista de compras bastam: 1 × MDF 18 mm"
+  ],
+  "medidas_reais": {
+    "largura": 80.0,
+    "altura": 100,
+    "profundidade": 30
+  },
+  "lista_corte": [
+    {
+      "ids": [
+        "B1",
+        "P1",
+        "P2",
+        "T1"
+      ],
+      "nomes": [
+        "Base",
+        "Prateleira de baixo",
+        "Prateleira de cima",
+        "Topo"
+      ],
+      "grupo": "Prateleiras",
+      "material": "mdf18",
+      "material_nome": "MDF 18 mm",
+      "comprimento": 76.4,
+      "largura": 30,
+      "espessura_mm": 18,
+      "veio": "livre",
+      "bordas": [
+        "C1"
+      ],
+      "fita_cm": 305.6,
+      "qtd": 4
+    },
+    {
+      "ids": [
+        "L1",
+        "L2"
+      ],
+      "nomes": [
+        "Lateral esquerda",
+        "Lateral direita"
+      ],
+      "grupo": "Corpo",
+      "material": "mdf18",
+      "material_nome": "MDF 18 mm",
+      "comprimento": 100,
+      "largura": 30,
+      "espessura_mm": 18,
+      "veio": "livre",
+      "bordas": [
+        "C1"
+      ],
+      "fita_cm": 200.0,
+      "qtd": 2
+    },
+    {
+      "ids": [
+        "TR1"
+      ],
+      "nomes": [
+        "Travessa de fixação"
+      ],
+      "grupo": "Travessas",
+      "material": "mdf18",
+      "material_nome": "MDF 18 mm",
+      "comprimento": 76.4,
+      "largura": 10,
+      "espessura_mm": 18,
+      "veio": "livre",
+      "bordas": [],
+      "fita_cm": 0.0,
+      "qtd": 1
+    }
+  ],
+  "fita_total_m": 5.06,
+  "plano_corte": [
+    {
+      "material": "mdf18",
+      "nome": "MDF 18 mm",
+      "chapa": {
+        "comprimento": 275,
+        "largura": 184
+      },
+      "chapas": [
+        {
+          "pecas": [
+            {
+              "id": "L1",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 100,
+              "l": 30,
+              "girada": false
+            },
+            {
+              "id": "L2",
+              "x": 101.3,
+              "y": 1.0,
+              "c": 100,
+              "l": 30,
+              "girada": false
+            },
+            {
+              "id": "B1",
+              "x": 1.0,
+              "y": 31.3,
+              "c": 76.4,
+              "l": 30,
+              "girada": false
+            },
+            {
+              "id": "P1",
+              "x": 77.7,
+              "y": 31.3,
+              "c": 76.4,
+              "l": 30,
+              "girada": false
+            },
+            {
+              "id": "P2",
+              "x": 154.4,
+              "y": 31.3,
+              "c": 76.4,
+              "l": 30,
+              "girada": false
+            },
+            {
+              "id": "T1",
+              "x": 1.0,
+              "y": 61.6,
+              "c": 76.4,
+              "l": 30,
+              "girada": false
+            },
+            {
+              "id": "TR1",
+              "x": 77.7,
+              "y": 61.6,
+              "c": 76.4,
+              "l": 10,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.315
+        }
+      ]
+    }
+  ],
+  "gerado_em": "2026-10-25T19:55:31+00:00"
+}

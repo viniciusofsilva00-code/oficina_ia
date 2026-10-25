@@ -1,5 +1,97 @@
 [
  {
+  "id": "002-teste-do-sistema-estante-simples-de-pare",
+  "titulo": "Estante de parede com 3 vãos",
+  "resumo": "Estante aberta em MDF 18 mm, com 2 laterais, base, topo e 2 prateleiras. Fica presa na parede por uma travessa atrás e tem 3 vãos de cerca de 31 cm para livros.",
+  "data": "2026-10-25",
+  "dificuldade": 1,
+  "dimensoes_externas": {
+   "largura": 80,
+   "altura": 100,
+   "profundidade": 30
+  },
+  "status": "ok",
+  "miniatura": [
+   {
+    "caixa": [
+     0,
+     0,
+     0,
+     1.8,
+     100,
+     30
+    ],
+    "grupo": "Corpo"
+   },
+   {
+    "caixa": [
+     78.2,
+     0,
+     0,
+     1.8,
+     100,
+     30
+    ],
+    "grupo": "Corpo"
+   },
+   {
+    "caixa": [
+     1.8,
+     0,
+     0,
+     76.4,
+     1.8,
+     30
+    ],
+    "grupo": "Prateleiras"
+   },
+   {
+    "caixa": [
+     1.8,
+     32.8,
+     0,
+     76.4,
+     1.8,
+     30
+    ],
+    "grupo": "Prateleiras"
+   },
+   {
+    "caixa": [
+     1.8,
+     65.6,
+     0,
+     76.4,
+     1.8,
+     30
+    ],
+    "grupo": "Prateleiras"
+   },
+   {
+    "caixa": [
+     1.8,
+     98.2,
+     0,
+     76.4,
+     1.8,
+     30
+    ],
+    "grupo": "Prateleiras"
+   },
+   {
+    "caixa": [
+     1.8,
+     88.2,
+     0,
+     76.4,
+     10,
+     1.8
+    ],
+    "grupo": "Travessas"
+   }
+  ]
+ },
+ {
   "id": "000-gabinete-pia-60",
   "titulo": "Gabinete da pia 60",
   "resumo": "Gabinete de piso em MDF RU com 2 portas e rodapé recuado. Segura a pia de sobrepor de 60 × 45 cm pela borda e deixa a cuba e o sifão livres por baixo.",
