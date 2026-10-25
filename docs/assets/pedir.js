@@ -20,6 +20,14 @@
         return r.json().then(function (j) { if (!r.ok) { var e = new Error(j.message || ("erro " + r.status)); e.status = r.status; throw e; } return j; });
       });
   }
+  var PERM = "Abra github.com/settings/personal-access-tokens, edite a chave e ligue ";
+  function permissao(e, qual) {
+    if (e && e.status === 403 && /personal access token/i.test(e.message)) {
+      var x = new Error("Falta permissão na chave. " + PERM + qual + " = Read and write para " + repo.split("/")[1] + ". Depois toque em Enviar de novo; não precisa colar a chave outra vez");
+      x.status = 403; throw x;
+    }
+    throw e;
+  }
   function quando(iso) { var d = new Date(iso); return d.toLocaleDateString("pt-BR") + " " + d.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" }); }
 
   /* ---------- roteamento por âncora ---------- */
@@ -63,10 +71,12 @@
     if (info) return Promise.resolve(info);
     return gh("/repos/" + repo).then(function (r) {
       if (!r.permissions || !r.permissions.push) throw new Error("A chave funciona, mas não tem permissão de escrita em " + repo + ". Confira Contents e Issues = Read and write.");
-      info = r; return r;
+      info = r;
+      return gh("/repos/" + repo + "/labels/projeto").then(function () { return r; });
     }).catch(function (e) {
       if (e.status === 401) throw new Error("Chave recusada pelo GitHub. Confira se copiou inteira e se não venceu.");
       if (e.status === 404) throw new Error("A chave não enxerga " + repo + ". Marque esse repositório em Repository access.");
+      if (e.status === 403) throw new Error("A chave não tem a permissão Issues. Edite a chave e ligue Contents e Issues = Read and write.");
       throw e;
     });
   }
@@ -144,7 +154,8 @@
           prog.textContent = "enviando foto " + (i + 1) + " de " + fotos.length + "…";
           var nome = pasta + "/foto-" + String(i + 1).padStart(2, "0") + ".jpg";
           return base64(f.blob).then(function (b64) {
-            return gh("/repos/" + repo + "/contents/" + nome, { method: "PUT", body: { message: "pedido: foto " + (i + 1), content: b64, branch: ramo } });
+            return gh("/repos/" + repo + "/contents/" + nome, { method: "PUT", body: { message: "pedido: foto " + (i + 1), content: b64, branch: ramo } })
+              .catch(function (e) { permissao(e, "Contents"); });
           }).then(function () { urls.push("https://raw.githubusercontent.com/" + repo + "/" + ramo + "/" + nome); });
         });
       }, Promise.resolve());
@@ -155,12 +166,13 @@
       var corpo = "<!-- enviado pelo site da oficina_ia -->\n\n" + sec("Ideia", ideia) + sec("Fotos", urls.map(function (u, i) { return "![foto " + (i + 1) + "](" + u + ")"; }).join("\n\n")) +
         sec("Medidas que você já sabe", v("medidas")) + sec("Onde o móvel vai ficar", v("local")) + sec("Material", mat) + sec("Extras", v("extras"));
       var titulo = "[projeto] " + ideia.split("\n")[0].slice(0, 70);
-      return gh("/repos/" + repo + "/issues", { method: "POST", body: { title: titulo, body: corpo, labels: ["projeto"] } });
+      return gh("/repos/" + repo + "/issues", { method: "POST", body: { title: titulo, body: corpo, labels: ["projeto"] } })
+        .catch(function (e) { permissao(e, "Issues"); });
     }).then(function (issue) {
       location.hash = "#p" + issue.number;
     }).catch(function (e) {
       btn.disabled = false; btn.textContent = "Enviar pedido →"; prog.textContent = "";
-      aviso("Não consegui enviar: " + e.message + ". Tente de novo.");
+      aviso(e.status === 403 ? e.message + "." : "Não consegui enviar: " + e.message + ". Tente de novo.");
     });
   }
 
@@ -228,7 +240,7 @@
         if (b) b.onclick = function () {
           var t = document.getElementById("aj").value.trim(); if (!t) return;
           b.disabled = true; document.getElementById("pAj").textContent = "enviando…";
-          gh("/repos/" + repo + "/issues/" + n + "/comments", { method: "POST", body: { body: "ajuste: " + t } }).then(desenhar)
+          gh("/repos/" + repo + "/issues/" + n + "/comments", { method: "POST", body: { body: "ajuste: " + t } }).catch(function (e) { permissao(e, "Issues"); }).then(desenhar)
             .catch(function (x) { b.disabled = false; document.getElementById("pAj").textContent = "Não consegui enviar: " + x.message; });
         };
         clearInterval(timer);

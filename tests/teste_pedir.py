@@ -46,6 +46,8 @@ def main():
         assert req.headers.get("authorization") == "Bearer github_pat_teste", "token não enviado"
         if url.endswith("/repos/" + REPO):
             return route.fulfill(json={"default_branch": "main", "permissions": {"push": True}})
+        if url.endswith("/labels/projeto"):
+            return route.fulfill(json={"name": "projeto"})
         if "/contents/entrada/" in url and req.method == "PUT":
             registro["puts"].append((url, corpo))
             return route.fulfill(status=201, json={"content": {}})
