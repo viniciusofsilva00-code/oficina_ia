@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projeto · oficina_ia</title>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" sizes="any">
+<link rel="icon" href="../../assets/favicon-16.svg" type="image/svg+xml" sizes="16x16">
+<link rel="apple-touch-icon" href="../../assets/icone-180.png">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../assets/oficina.css">
+</head>
+<body>
+<!-- página-modelo: scripts/atualizar_indice.py copia este arquivo para cada docs/projetos/<id>/index.html -->
+<header class="top">
+  <div class="top-in">
+    <a class="mark" href="../../"><span class="chip" aria-hidden="true"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M5 9 L9 9 L12 18.6 L15 9 L19 9 L14.2 23 L9.8 23 Z M21 19.5 L27 19.5 L27 23 L21 23 Z"/></svg></span>oficina_ia<span class="cursor" aria-hidden="true"></span></a>
+    <span class="endosso">· um projeto vini_lab</span>
+    <nav class="nav" aria-label="Navegação">
+      <a class="inicio" href="../../">/início</a><a href="../../pedir/#pedidos">/pedidos</a>
+      <span class="nav-sec"><a href="#premissas">/premissas</a><a href="#modelo">/3d</a><a href="#corte">/corte</a><a href="#compras">/compras</a><a href="#montagem">/montagem</a><a href="#checklist">/checklist</a></span>
+      <a class="opc" href="#" id="imprimir">/imprimir</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="app"><p class="lead">carregando o projeto…</p></main>
+<noscript><p class="wrap">Esta página precisa de JavaScript para montar o projeto.</p></noscript>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="../../assets/iso.js"></script>
+<script src="../../assets/projeto.js"></script>
+<script>document.getElementById("imprimir").addEventListener("click", function (e) { e.preventDefault(); window.print(); });</script>
+</body>
+</html>

@@ -1,0 +1,884 @@
+{
+  "status": "ok",
+  "erros": [],
+  "avisos": [],
+  "verificacoes": [
+    "Espessura de todas as peças igual à do material",
+    "Nenhuma peça ocupa o lugar de outra (73 peças)",
+    "Medidas externas conferem: 200,0 × 75,0 × 80,0 cm",
+    "Largura: ponta + base + ponta: 200,0",
+    "Base: 25 ripas + 24 vãos de 4 cm: 158,5",
+    "Profundidade: frente do tampo + base + fundo do tampo: 75,0",
+    "Base: trilho + 6 ripas e 7 vãos + trilho: 51,0",
+    "Profundidade: 3 tábuas do tampo: 75,0",
+    "Altura: trilho + ripa + trilho + tampo: 80,0",
+    "Trilho lateral cabe entre os trilhos da frente e de trás: 43,0",
+    "Cada peça é montada em exatamente um passo (9 passos)",
+    "Chapas da lista de compras bastam: 3 × Tábua de cedrinho 2,5 × 30 cm, 5 × Tábua de cedrinho 2,5 × 20 cm"
+  ],
+  "medidas_reais": {
+    "largura": 200,
+    "altura": 80.0,
+    "profundidade": 75
+  },
+  "lista_corte": [
+    {
+      "ids": [
+        "RE1",
+        "RE2",
+        "RD1",
+        "RD2"
+      ],
+      "nomes": [
+        "Trilho lateral esquerdo, baixo",
+        "Trilho lateral esquerdo, cima",
+        "Trilho lateral direito, baixo",
+        "Trilho lateral direito, cima"
+      ],
+      "grupo": "Trilhos",
+      "material": "cedro25_20",
+      "material_nome": "Tábua de cedrinho 2,5 × 20 cm",
+      "comprimento": 43,
+      "largura": 4,
+      "espessura_mm": 25,
+      "veio": "no comprimento",
+      "bordas": [],
+      "fita_cm": 0.0,
+      "qtd": 4
+    },
+    {
+      "ids": [
+        "RF1",
+        "RF2",
+        "RT1",
+        "RT2"
+      ],
+      "nomes": [
+        "Trilho de baixo, frente",
+        "Trilho de cima, frente",
+        "Trilho de baixo, trás",
+        "Trilho de cima, trás"
+      ],
+      "grupo": "Trilhos",
+      "material": "cedro25_20",
+      "material_nome": "Tábua de cedrinho 2,5 × 20 cm",
+      "comprimento": 158.5,
+      "largura": 4,
+      "espessura_mm": 25,
+      "veio": "no comprimento",
+      "bordas": [],
+      "fita_cm": 0.0,
+      "qtd": 4
+    },
+    {
+      "ids": [
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "nomes": [
+        "Tábua do tampo, frente",
+        "Tábua do tampo, meio",
+        "Tábua do tampo, fundo"
+      ],
+      "grupo": "Tampo",
+      "material": "cedro25_30",
+      "material_nome": "Tábua de cedrinho 2,5 × 30 cm",
+      "comprimento": 200,
+      "largura": 25,
+      "espessura_mm": 25,
+      "veio": "no comprimento",
+      "bordas": [],
+      "fita_cm": 0.0,
+      "qtd": 3
+    },
+    {
+      "ids": [
+        "VF01",
+        "VF02",
+        "VF03",
+        "VF04",
+        "VF05",
+        "VF06",
+        "VF07",
+        "VF08",
+        "VF09",
+        "VF10",
+        "VF11",
+        "VF12",
+        "VF13",
+        "VF14",
+        "VF15",
+        "VF16",
+        "VF17",
+        "VF18",
+        "VF19",
+        "VF20",
+        "VF21",
+        "VF22",
+        "VF23",
+        "VF24",
+        "VF25",
+        "VT01",
+        "VT02",
+        "VT03",
+        "VT04",
+        "VT05",
+        "VT06",
+        "VT07",
+        "VT08",
+        "VT09",
+        "VT10",
+        "VT11",
+        "VT12",
+        "VT13",
+        "VT14",
+        "VT15",
+        "VT16",
+        "VT17",
+        "VT18",
+        "VT19",
+        "VT20",
+        "VT21",
+        "VT22",
+        "VT23",
+        "VT24",
+        "VT25",
+        "VE1",
+        "VE2",
+        "VE3",
+        "VE4",
+        "VE5",
+        "VE6",
+        "VD1",
+        "VD2",
+        "VD3",
+        "VD4",
+        "VD5",
+        "VD6"
+      ],
+      "nomes": [
+        "Ripa da frente 1",
+        "Ripa da frente 2",
+        "Ripa da frente 3",
+        "Ripa da frente 4",
+        "Ripa da frente 5",
+        "Ripa da frente 6",
+        "Ripa da frente 7",
+        "Ripa da frente 8",
+        "Ripa da frente 9",
+        "Ripa da frente 10",
+        "Ripa da frente 11",
+        "Ripa da frente 12",
+        "Ripa da frente 13",
+        "Ripa da frente 14",
+        "Ripa da frente 15",
+        "Ripa da frente 16",
+        "Ripa da frente 17",
+        "Ripa da frente 18",
+        "Ripa da frente 19",
+        "Ripa da frente 20",
+        "Ripa da frente 21",
+        "Ripa da frente 22",
+        "Ripa da frente 23",
+        "Ripa da frente 24",
+        "Ripa da frente 25",
+        "Ripa de trás 1",
+        "Ripa de trás 2",
+        "Ripa de trás 3",
+        "Ripa de trás 4",
+        "Ripa de trás 5",
+        "Ripa de trás 6",
+        "Ripa de trás 7",
+        "Ripa de trás 8",
+        "Ripa de trás 9",
+        "Ripa de trás 10",
+        "Ripa de trás 11",
+        "Ripa de trás 12",
+        "Ripa de trás 13",
+        "Ripa de trás 14",
+        "Ripa de trás 15",
+        "Ripa de trás 16",
+        "Ripa de trás 17",
+        "Ripa de trás 18",
+        "Ripa de trás 19",
+        "Ripa de trás 20",
+        "Ripa de trás 21",
+        "Ripa de trás 22",
+        "Ripa de trás 23",
+        "Ripa de trás 24",
+        "Ripa de trás 25",
+        "Ripa lateral esquerda 1",
+        "Ripa lateral esquerda 2",
+        "Ripa lateral esquerda 3",
+        "Ripa lateral esquerda 4",
+        "Ripa lateral esquerda 5",
+        "Ripa lateral esquerda 6",
+        "Ripa lateral direita 1",
+        "Ripa lateral direita 2",
+        "Ripa lateral direita 3",
+        "Ripa lateral direita 4",
+        "Ripa lateral direita 5",
+        "Ripa lateral direita 6"
+      ],
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "material_nome": "Tábua de cedrinho 2,5 × 20 cm",
+      "comprimento": 72.5,
+      "largura": 4,
+      "espessura_mm": 25,
+      "veio": "no comprimento",
+      "bordas": [],
+      "fita_cm": 0.0,
+      "qtd": 62
+    }
+  ],
+  "fita_total_m": 0.0,
+  "plano_corte": [
+    {
+      "material": "cedro25_30",
+      "nome": "Tábua de cedrinho 2,5 × 30 cm",
+      "chapa": {
+        "comprimento": 300,
+        "largura": 30
+      },
+      "chapas": [
+        {
+          "pecas": [
+            {
+              "id": "T1",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 200,
+              "l": 25,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.556
+        },
+        {
+          "pecas": [
+            {
+              "id": "T2",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 200,
+              "l": 25,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.556
+        },
+        {
+          "pecas": [
+            {
+              "id": "T3",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 200,
+              "l": 25,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.556
+        }
+      ]
+    },
+    {
+      "material": "cedro25_20",
+      "nome": "Tábua de cedrinho 2,5 × 20 cm",
+      "chapa": {
+        "comprimento": 300,
+        "largura": 20
+      },
+      "chapas": [
+        {
+          "pecas": [
+            {
+              "id": "RF1",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 158.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "RF2",
+              "x": 1.0,
+              "y": 5.3,
+              "c": 158.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "RT1",
+              "x": 1.0,
+              "y": 9.6,
+              "c": 158.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "RT2",
+              "x": 1.0,
+              "y": 13.9,
+              "c": 158.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF01",
+              "x": 159.8,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF02",
+              "x": 159.8,
+              "y": 5.3,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF03",
+              "x": 159.8,
+              "y": 9.6,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF04",
+              "x": 159.8,
+              "y": 13.9,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "RE1",
+              "x": 232.6,
+              "y": 1.0,
+              "c": 43,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "RE2",
+              "x": 232.6,
+              "y": 5.3,
+              "c": 43,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "RD1",
+              "x": 232.6,
+              "y": 9.6,
+              "c": 43,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "RD2",
+              "x": 232.6,
+              "y": 13.9,
+              "c": 43,
+              "l": 4,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.731
+        },
+        {
+          "pecas": [
+            {
+              "id": "VF05",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF06",
+              "x": 73.8,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF07",
+              "x": 146.6,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF08",
+              "x": 219.4,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF09",
+              "x": 1.0,
+              "y": 5.3,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF10",
+              "x": 73.8,
+              "y": 5.3,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF11",
+              "x": 146.6,
+              "y": 5.3,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF12",
+              "x": 219.4,
+              "y": 5.3,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF13",
+              "x": 1.0,
+              "y": 9.6,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF14",
+              "x": 73.8,
+              "y": 9.6,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF15",
+              "x": 146.6,
+              "y": 9.6,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF16",
+              "x": 219.4,
+              "y": 9.6,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF17",
+              "x": 1.0,
+              "y": 13.9,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF18",
+              "x": 73.8,
+              "y": 13.9,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF19",
+              "x": 146.6,
+              "y": 13.9,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF20",
+              "x": 219.4,
+              "y": 13.9,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.773
+        },
+        {
+          "pecas": [
+            {
+              "id": "VF21",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF22",
+              "x": 73.8,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF23",
+              "x": 146.6,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF24",
+              "x": 219.4,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VF25",
+              "x": 1.0,
+              "y": 5.3,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT01",
+              "x": 73.8,
+              "y": 5.3,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT02",
+              "x": 146.6,
+              "y": 5.3,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT03",
+              "x": 219.4,
+              "y": 5.3,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT04",
+              "x": 1.0,
+              "y": 9.6,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT05",
+              "x": 73.8,
+              "y": 9.6,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT06",
+              "x": 146.6,
+              "y": 9.6,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT07",
+              "x": 219.4,
+              "y": 9.6,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT08",
+              "x": 1.0,
+              "y": 13.9,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT09",
+              "x": 73.8,
+              "y": 13.9,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT10",
+              "x": 146.6,
+              "y": 13.9,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT11",
+              "x": 219.4,
+              "y": 13.9,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.773
+        },
+        {
+          "pecas": [
+            {
+              "id": "VT12",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT13",
+              "x": 73.8,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT14",
+              "x": 146.6,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT15",
+              "x": 219.4,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT16",
+              "x": 1.0,
+              "y": 5.3,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT17",
+              "x": 73.8,
+              "y": 5.3,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT18",
+              "x": 146.6,
+              "y": 5.3,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT19",
+              "x": 219.4,
+              "y": 5.3,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT20",
+              "x": 1.0,
+              "y": 9.6,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT21",
+              "x": 73.8,
+              "y": 9.6,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT22",
+              "x": 146.6,
+              "y": 9.6,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT23",
+              "x": 219.4,
+              "y": 9.6,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT24",
+              "x": 1.0,
+              "y": 13.9,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VT25",
+              "x": 73.8,
+              "y": 13.9,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VE1",
+              "x": 146.6,
+              "y": 13.9,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VE2",
+              "x": 219.4,
+              "y": 13.9,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.773
+        },
+        {
+          "pecas": [
+            {
+              "id": "VE3",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VE4",
+              "x": 73.8,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VE5",
+              "x": 146.6,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VE6",
+              "x": 219.4,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VD1",
+              "x": 1.0,
+              "y": 5.3,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VD2",
+              "x": 73.8,
+              "y": 5.3,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VD3",
+              "x": 146.6,
+              "y": 5.3,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VD4",
+              "x": 219.4,
+              "y": 5.3,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VD5",
+              "x": 1.0,
+              "y": 9.6,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            },
+            {
+              "id": "VD6",
+              "x": 73.8,
+              "y": 9.6,
+              "c": 72.5,
+              "l": 4,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.483
+        }
+      ]
+    }
+  ],
+  "gerado_em": "2026-10-25T23:31:46+00:00"
+}

@@ -1,0 +1,1750 @@
+{
+  "versao": 1,
+  "id": "004-mesa-para-decoracao-de-festa",
+  "titulo": "Mesa para decoração de festa",
+  "resumo": "Mesa baixa de cedrinho maciço, 2 m × 75 cm e 80 cm de altura, com tampo de 3 tábuas coladas e base de ripas em pé. Pensada para receber bolo, doces e arranjos de flores.",
+  "pedido_original": "Mesa para decoração de festa. Medidas: use a das imagens. Uso: decorações de festas. Material: madeira maciça, deve ser cedrinho.",
+  "data": "2026-10-25",
+  "dificuldade": 3,
+  "tempo": "2 a 3 fins de semana · cerca de 20 h de trabalho + 3 dias de secagem do verniz",
+  "dimensoes_externas": {
+    "largura": 200,
+    "altura": 80,
+    "profundidade": 75
+  },
+  "medidas_conhecidas": [
+    {
+      "nome": "Comprimento do tampo",
+      "valor": 200,
+      "unidade": "cm",
+      "fonte": "foto-02.jpg e foto-04.jpg, cota \"2 metros\" na borda de cima do tampo. A foto-01.jpg mostra outra mesa, com 1,20 m: valeu a medida das duas fotos iguais."
+    },
+    {
+      "nome": "Profundidade do tampo",
+      "valor": 75,
+      "unidade": "cm",
+      "fonte": "foto-02.jpg e foto-04.jpg, cota \"0,75 cm\" na lateral do tampo. Pela proporção da foto é 0,75 m, ou seja, 75 cm."
+    },
+    {
+      "nome": "Altura total",
+      "valor": 80,
+      "unidade": "cm",
+      "fonte": "foto-02.jpg e foto-04.jpg, cota \"0,80 cm\" na vertical, do chão ao topo do tampo. Pela proporção é 0,80 m."
+    }
+  ],
+  "premissas": [
+    {
+      "nome": "Espessura do tampo",
+      "valor": 2.5,
+      "unidade": "cm",
+      "como_conferir": "Na foto o tampo parece grosso. Tábua de 2,5 cm é a espessura comercial mais grossa; meça a tábua na loja antes de comprar."
+    },
+    {
+      "nome": "Madeira",
+      "valor": "Cedrinho, tábua de 300 cm",
+      "unidade": "",
+      "como_conferir": "Confira com a trena a largura e a espessura reais das tábuas: costumam vir com 0,5 cm a menos. Escolha tábuas retas, sem empenos e sem nós soltos."
+    },
+    {
+      "nome": "Base em caixa reta (sem inclinação)",
+      "valor": "sim",
+      "unidade": "",
+      "como_conferir": "Nas fotos a base afunila para baixo. Aqui ela é uma caixa reta de ripas, bem mais fácil de cortar e montar. A aparência é parecida."
+    },
+    {
+      "nome": "Tamanho da base",
+      "valor": "158,5 × 51",
+      "unidade": "cm",
+      "como_conferir": "Fica recuada 20,75 cm nas pontas e 12 cm na frente e atrás, para ninguém bater a canela. Meça o espaço onde a mesa vai ficar."
+    },
+    {
+      "nome": "Ripas: seção e vão",
+      "valor": "2,5 × 4 cm, vão de 4 cm",
+      "unidade": "",
+      "como_conferir": "Meça a ripa e o vão entre elas com a trena. O vão deixa a base leve como na foto."
+    },
+    {
+      "nome": "Uso",
+      "valor": "Interno, piso plano",
+      "unidade": "",
+      "como_conferir": "Teste com um nível no piso. Se a festa for ao ar livre, avise no pedido de ajuste."
+    },
+    {
+      "nome": "Peso sobre o tampo",
+      "valor": "até 40 kg",
+      "unidade": "",
+      "como_conferir": "Bolo, doces e arranjos. Para mais peso, peça um ajuste."
+    }
+  ],
+  "perguntas": [
+    "A foto-01.jpg mostra uma mesa parecida com 1,20 m de comprimento. Usamos 2 m das outras fotos. Se você prefere 1,20 m, peça um ajuste.",
+    "O tampo mostrado nas fotos parece ter quase 4 cm. Usamos 2,5 cm, a espessura comercial mais grossa de tábua de cedrinho."
+  ],
+  "conferencias": [
+    {
+      "descricao": "Largura: ponta + base + ponta",
+      "soma": [
+        20.75,
+        158.5,
+        20.75
+      ],
+      "esperado": 200
+    },
+    {
+      "descricao": "Base: 25 ripas + 24 vãos de 4 cm",
+      "soma": [
+        62.5,
+        96
+      ],
+      "esperado": 158.5
+    },
+    {
+      "descricao": "Profundidade: frente do tampo + base + fundo do tampo",
+      "soma": [
+        12,
+        51,
+        12
+      ],
+      "esperado": 75
+    },
+    {
+      "descricao": "Base: trilho + 6 ripas e 7 vãos + trilho",
+      "soma": [
+        4,
+        15,
+        28,
+        4
+      ],
+      "esperado": 51
+    },
+    {
+      "descricao": "Profundidade: 3 tábuas do tampo",
+      "soma": [
+        25,
+        25,
+        25
+      ],
+      "esperado": 75
+    },
+    {
+      "descricao": "Altura: trilho + ripa + trilho + tampo",
+      "soma": [
+        2.5,
+        72.5,
+        2.5,
+        2.5
+      ],
+      "esperado": 80
+    },
+    {
+      "descricao": "Trilho lateral cabe entre os trilhos da frente e de trás",
+      "soma": [
+        51,
+        -4,
+        -4
+      ],
+      "esperado": 43
+    }
+  ],
+  "materiais": [
+    {
+      "id": "cedro25_30",
+      "nome": "Tábua de cedrinho 2,5 × 30 cm",
+      "tipo": "tabua",
+      "espessura_mm": 25,
+      "chapa": {
+        "comprimento": 300,
+        "largura": 30
+      },
+      "veio": true
+    },
+    {
+      "id": "cedro25_20",
+      "nome": "Tábua de cedrinho 2,5 × 20 cm",
+      "tipo": "tabua",
+      "espessura_mm": 25,
+      "chapa": {
+        "comprimento": 300,
+        "largura": 20
+      },
+      "veio": true
+    }
+  ],
+  "pecas": [
+    {
+      "id": "T1",
+      "nome": "Tábua do tampo, frente",
+      "grupo": "Tampo",
+      "material": "cedro25_30",
+      "caixa": [
+        0,
+        77.5,
+        0,
+        200,
+        2.5,
+        25
+      ],
+      "veio": "x",
+      "bordas": [],
+      "obs": "Cortada de uma tábua de 30 cm, refilada para 25 cm. Cola e cavilhas nas laterais de contato."
+    },
+    {
+      "id": "T2",
+      "nome": "Tábua do tampo, meio",
+      "grupo": "Tampo",
+      "material": "cedro25_30",
+      "caixa": [
+        0,
+        77.5,
+        25,
+        200,
+        2.5,
+        25
+      ],
+      "veio": "x",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "T3",
+      "nome": "Tábua do tampo, fundo",
+      "grupo": "Tampo",
+      "material": "cedro25_30",
+      "caixa": [
+        0,
+        77.5,
+        50,
+        200,
+        2.5,
+        25
+      ],
+      "veio": "x",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "RF1",
+      "nome": "Trilho de baixo, frente",
+      "grupo": "Trilhos",
+      "material": "cedro25_20",
+      "caixa": [
+        20.75,
+        0,
+        12,
+        158.5,
+        2.5,
+        4
+      ],
+      "veio": "x",
+      "bordas": [],
+      "obs": "Deitado: 2,5 cm de altura e 4 cm de largura."
+    },
+    {
+      "id": "RF2",
+      "nome": "Trilho de cima, frente",
+      "grupo": "Trilhos",
+      "material": "cedro25_20",
+      "caixa": [
+        20.75,
+        75,
+        12,
+        158.5,
+        2.5,
+        4
+      ],
+      "veio": "x",
+      "bordas": [],
+      "obs": "Fica sob o tampo."
+    },
+    {
+      "id": "RT1",
+      "nome": "Trilho de baixo, trás",
+      "grupo": "Trilhos",
+      "material": "cedro25_20",
+      "caixa": [
+        20.75,
+        0,
+        59,
+        158.5,
+        2.5,
+        4
+      ],
+      "veio": "x",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "RT2",
+      "nome": "Trilho de cima, trás",
+      "grupo": "Trilhos",
+      "material": "cedro25_20",
+      "caixa": [
+        20.75,
+        75,
+        59,
+        158.5,
+        2.5,
+        4
+      ],
+      "veio": "x",
+      "bordas": [],
+      "obs": "Fica sob o tampo."
+    },
+    {
+      "id": "RE1",
+      "nome": "Trilho lateral esquerdo, baixo",
+      "grupo": "Trilhos",
+      "material": "cedro25_20",
+      "caixa": [
+        20.75,
+        0,
+        16,
+        4,
+        2.5,
+        43
+      ],
+      "veio": "z",
+      "bordas": [],
+      "obs": "Encaixa entre os trilhos da frente e de trás."
+    },
+    {
+      "id": "RE2",
+      "nome": "Trilho lateral esquerdo, cima",
+      "grupo": "Trilhos",
+      "material": "cedro25_20",
+      "caixa": [
+        20.75,
+        75,
+        16,
+        4,
+        2.5,
+        43
+      ],
+      "veio": "z",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "RD1",
+      "nome": "Trilho lateral direito, baixo",
+      "grupo": "Trilhos",
+      "material": "cedro25_20",
+      "caixa": [
+        175.25,
+        0,
+        16,
+        4,
+        2.5,
+        43
+      ],
+      "veio": "z",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "RD2",
+      "nome": "Trilho lateral direito, cima",
+      "grupo": "Trilhos",
+      "material": "cedro25_20",
+      "caixa": [
+        175.25,
+        75,
+        16,
+        4,
+        2.5,
+        43
+      ],
+      "veio": "z",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF01",
+      "nome": "Ripa da frente 1",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        20.75,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF02",
+      "nome": "Ripa da frente 2",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        27.25,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF03",
+      "nome": "Ripa da frente 3",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        33.75,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF04",
+      "nome": "Ripa da frente 4",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        40.25,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF05",
+      "nome": "Ripa da frente 5",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        46.75,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF06",
+      "nome": "Ripa da frente 6",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        53.25,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF07",
+      "nome": "Ripa da frente 7",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        59.75,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF08",
+      "nome": "Ripa da frente 8",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        66.25,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF09",
+      "nome": "Ripa da frente 9",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        72.75,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF10",
+      "nome": "Ripa da frente 10",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        79.25,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF11",
+      "nome": "Ripa da frente 11",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        85.75,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF12",
+      "nome": "Ripa da frente 12",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        92.25,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF13",
+      "nome": "Ripa da frente 13",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        98.75,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF14",
+      "nome": "Ripa da frente 14",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        105.25,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF15",
+      "nome": "Ripa da frente 15",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        111.75,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF16",
+      "nome": "Ripa da frente 16",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        118.25,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF17",
+      "nome": "Ripa da frente 17",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        124.75,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF18",
+      "nome": "Ripa da frente 18",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        131.25,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF19",
+      "nome": "Ripa da frente 19",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        137.75,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF20",
+      "nome": "Ripa da frente 20",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        144.25,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF21",
+      "nome": "Ripa da frente 21",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        150.75,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF22",
+      "nome": "Ripa da frente 22",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        157.25,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF23",
+      "nome": "Ripa da frente 23",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        163.75,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF24",
+      "nome": "Ripa da frente 24",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        170.25,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VF25",
+      "nome": "Ripa da frente 25",
+      "grupo": "Ripas da frente",
+      "material": "cedro25_20",
+      "caixa": [
+        176.75,
+        2.5,
+        12,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT01",
+      "nome": "Ripa de trás 1",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        20.75,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT02",
+      "nome": "Ripa de trás 2",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        27.25,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT03",
+      "nome": "Ripa de trás 3",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        33.75,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT04",
+      "nome": "Ripa de trás 4",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        40.25,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT05",
+      "nome": "Ripa de trás 5",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        46.75,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT06",
+      "nome": "Ripa de trás 6",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        53.25,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT07",
+      "nome": "Ripa de trás 7",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        59.75,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT08",
+      "nome": "Ripa de trás 8",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        66.25,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT09",
+      "nome": "Ripa de trás 9",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        72.75,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT10",
+      "nome": "Ripa de trás 10",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        79.25,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT11",
+      "nome": "Ripa de trás 11",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        85.75,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT12",
+      "nome": "Ripa de trás 12",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        92.25,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT13",
+      "nome": "Ripa de trás 13",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        98.75,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT14",
+      "nome": "Ripa de trás 14",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        105.25,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT15",
+      "nome": "Ripa de trás 15",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        111.75,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT16",
+      "nome": "Ripa de trás 16",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        118.25,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT17",
+      "nome": "Ripa de trás 17",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        124.75,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT18",
+      "nome": "Ripa de trás 18",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        131.25,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT19",
+      "nome": "Ripa de trás 19",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        137.75,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT20",
+      "nome": "Ripa de trás 20",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        144.25,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT21",
+      "nome": "Ripa de trás 21",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        150.75,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT22",
+      "nome": "Ripa de trás 22",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        157.25,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT23",
+      "nome": "Ripa de trás 23",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        163.75,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT24",
+      "nome": "Ripa de trás 24",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        170.25,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VT25",
+      "nome": "Ripa de trás 25",
+      "grupo": "Ripas de trás",
+      "material": "cedro25_20",
+      "caixa": [
+        176.75,
+        2.5,
+        59,
+        2.5,
+        72.5,
+        4
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VE1",
+      "nome": "Ripa lateral esquerda 1",
+      "grupo": "Ripas laterais",
+      "material": "cedro25_20",
+      "caixa": [
+        20.75,
+        2.5,
+        20,
+        4,
+        72.5,
+        2.5
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VE2",
+      "nome": "Ripa lateral esquerda 2",
+      "grupo": "Ripas laterais",
+      "material": "cedro25_20",
+      "caixa": [
+        20.75,
+        2.5,
+        26.5,
+        4,
+        72.5,
+        2.5
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VE3",
+      "nome": "Ripa lateral esquerda 3",
+      "grupo": "Ripas laterais",
+      "material": "cedro25_20",
+      "caixa": [
+        20.75,
+        2.5,
+        33,
+        4,
+        72.5,
+        2.5
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VE4",
+      "nome": "Ripa lateral esquerda 4",
+      "grupo": "Ripas laterais",
+      "material": "cedro25_20",
+      "caixa": [
+        20.75,
+        2.5,
+        39.5,
+        4,
+        72.5,
+        2.5
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VE5",
+      "nome": "Ripa lateral esquerda 5",
+      "grupo": "Ripas laterais",
+      "material": "cedro25_20",
+      "caixa": [
+        20.75,
+        2.5,
+        46,
+        4,
+        72.5,
+        2.5
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VE6",
+      "nome": "Ripa lateral esquerda 6",
+      "grupo": "Ripas laterais",
+      "material": "cedro25_20",
+      "caixa": [
+        20.75,
+        2.5,
+        52.5,
+        4,
+        72.5,
+        2.5
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VD1",
+      "nome": "Ripa lateral direita 1",
+      "grupo": "Ripas laterais",
+      "material": "cedro25_20",
+      "caixa": [
+        175.25,
+        2.5,
+        20,
+        4,
+        72.5,
+        2.5
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VD2",
+      "nome": "Ripa lateral direita 2",
+      "grupo": "Ripas laterais",
+      "material": "cedro25_20",
+      "caixa": [
+        175.25,
+        2.5,
+        26.5,
+        4,
+        72.5,
+        2.5
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VD3",
+      "nome": "Ripa lateral direita 3",
+      "grupo": "Ripas laterais",
+      "material": "cedro25_20",
+      "caixa": [
+        175.25,
+        2.5,
+        33,
+        4,
+        72.5,
+        2.5
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VD4",
+      "nome": "Ripa lateral direita 4",
+      "grupo": "Ripas laterais",
+      "material": "cedro25_20",
+      "caixa": [
+        175.25,
+        2.5,
+        39.5,
+        4,
+        72.5,
+        2.5
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VD5",
+      "nome": "Ripa lateral direita 5",
+      "grupo": "Ripas laterais",
+      "material": "cedro25_20",
+      "caixa": [
+        175.25,
+        2.5,
+        46,
+        4,
+        72.5,
+        2.5
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    },
+    {
+      "id": "VD6",
+      "nome": "Ripa lateral direita 6",
+      "grupo": "Ripas laterais",
+      "material": "cedro25_20",
+      "caixa": [
+        175.25,
+        2.5,
+        52.5,
+        4,
+        72.5,
+        2.5
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": ""
+    }
+  ],
+  "referencias": [],
+  "folgas": [],
+  "compras": [
+    {
+      "categoria": "Madeira",
+      "item": "Tábua de cedrinho 2,5 × 30 cm, 300 cm",
+      "quantidade": 3,
+      "unidade": "tábuas",
+      "material": "cedro25_30",
+      "obs": "Cada uma rende 1 tábua do tampo de 200 cm refilada para 25 cm. Peça à madeireira para cortar no comprimento."
+    },
+    {
+      "categoria": "Madeira",
+      "item": "Tábua de cedrinho 2,5 × 20 cm, 300 cm",
+      "quantidade": 5,
+      "unidade": "tábuas",
+      "material": "cedro25_20",
+      "obs": "Rendem 62 ripas e 8 trilhos, todos com 4 cm de largura. Peça para a madeireira refilar em 4 cm."
+    },
+    {
+      "categoria": "Fixação",
+      "item": "Cola de madeira PVA D3, 500 g",
+      "quantidade": 2,
+      "unidade": "frascos",
+      "obs": "Um para o tampo, outro para as ripas."
+    },
+    {
+      "categoria": "Fixação",
+      "item": "Parafuso para madeira cabeça chata 3,5 × 40 mm",
+      "quantidade": 140,
+      "unidade": "un",
+      "obs": "124 nas pontas das ripas (2 por ripa) + 16 de sobra para erros."
+    },
+    {
+      "categoria": "Fixação",
+      "item": "Cavilha de madeira 8 × 40 mm",
+      "quantidade": 12,
+      "unidade": "un",
+      "obs": "4 nas junções dos trilhos laterais e 8 entre as tábuas do tampo."
+    },
+    {
+      "categoria": "Fixação",
+      "item": "Cantoneira de aço 25 × 25 mm com furos",
+      "quantidade": 10,
+      "unidade": "un",
+      "obs": "Prendem o tampo nos trilhos de cima."
+    },
+    {
+      "categoria": "Fixação",
+      "item": "Parafuso para madeira cabeça panela 3,5 × 12 mm",
+      "quantidade": 24,
+      "unidade": "un",
+      "obs": "20 usados nas cantoneiras."
+    },
+    {
+      "categoria": "Acabamento",
+      "item": "Lixa grão 120",
+      "quantidade": 6,
+      "unidade": "folhas"
+    },
+    {
+      "categoria": "Acabamento",
+      "item": "Lixa grão 220",
+      "quantidade": 6,
+      "unidade": "folhas"
+    },
+    {
+      "categoria": "Acabamento",
+      "item": "Verniz poliuretano acetinado, 0,9 L",
+      "quantidade": 2,
+      "unidade": "latas",
+      "obs": "Cerca de 10 m² de madeira × 2 demãos ÷ 12 m² por litro ≈ 1,7 L."
+    },
+    {
+      "categoria": "Acabamento",
+      "item": "Pincel 2\" ou rolinho de espuma pequeno",
+      "quantidade": 2,
+      "unidade": "un"
+    },
+    {
+      "categoria": "Acabamento",
+      "item": "Feltro autoadesivo para pés",
+      "quantidade": 1,
+      "unidade": "cartela",
+      "obs": "Protege o piso sob o trilho de baixo."
+    }
+  ],
+  "ferramentas": [
+    {
+      "nome": "Serra circular com guia, ou serra tico-tico",
+      "uso": "Cortar as ripas e refilar as tábuas, se a madeireira não fizer."
+    },
+    {
+      "nome": "Serra de esquadria",
+      "uso": "Cortar as 62 ripas todas do mesmo tamanho com um batente de parada."
+    },
+    {
+      "nome": "Parafusadeira e brocas 3 mm e 8 mm",
+      "uso": "Pré-furos e furos das cavilhas."
+    },
+    {
+      "nome": "4 grampos sargento de 100 cm",
+      "uso": "Apertar as tábuas do tampo na colagem."
+    },
+    {
+      "nome": "Trena, esquadro e lápis",
+      "uso": "Medir, marcar e conferir o esquadro."
+    },
+    {
+      "nome": "Lixadeira orbital (opcional)",
+      "uso": "Acelera a lixa do tampo."
+    },
+    {
+      "nome": "Pedaço de madeira de 4 cm",
+      "uso": "Gabarito para o vão entre as ripas."
+    }
+  ],
+  "passos": [
+    {
+      "titulo": "Prepare e corte a madeira",
+      "pecas": [],
+      "texto": "Separe as tábuas e confira se estão retas.\n\n- Corte 3 tábuas de 30 cm com 200 cm de comprimento para o tampo.\n- Corte as tábuas de 20 cm nas medidas da lista de corte.\n- Refile as ripas e os trilhos para 4 cm de largura.\n\nMarque o id de cada peça a lápis em uma ponta.",
+      "erro_comum": "Cortar as 62 ripas uma a uma na trena. Prenda um batente na serra e corte todas com a mesma medida; 2 mm de diferença aparecem nos vãos."
+    },
+    {
+      "titulo": "Cole o tampo",
+      "pecas": [
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "texto": "Refile as tábuas para 25 cm e deixe as bordas de contato bem retas.\n\n- Faça 4 furos de 8 mm em cada junção e coloque cavilhas coladas.\n- Passe cola na lateral e junte as 3 tábuas.\n- Aperte com 4 grampos e limpe a cola que escorrer com pano úmido.\n\nDeixe secar 24 horas com os grampos.",
+      "erro_comum": "Juntar tábuas com os anéis da madeira todos para o mesmo lado: o tampo empena. Alterne a direção (um para cima, outro para baixo)."
+    },
+    {
+      "titulo": "Monte o painel da frente",
+      "pecas": [
+        "RF1",
+        "RF2",
+        "VF01",
+        "VF02",
+        "VF03",
+        "VF04",
+        "VF05",
+        "VF06",
+        "VF07",
+        "VF08",
+        "VF09",
+        "VF10",
+        "VF11",
+        "VF12",
+        "VF13",
+        "VF14",
+        "VF15",
+        "VF16",
+        "VF17",
+        "VF18",
+        "VF19",
+        "VF20",
+        "VF21",
+        "VF22",
+        "VF23",
+        "VF24",
+        "VF25"
+      ],
+      "texto": "Deite o trilho de baixo (RF1) na bancada.\n\n- Marque a posição das 25 ripas: a primeira na ponta, as outras a cada 6,5 cm (2,5 cm de ripa + 4 cm de vão).\n- Faça pré-furo na ponta de cada ripa e fixe com cola e 1 parafuso 3,5 × 40 mm pelo trilho.\n- Cole e parafuse o trilho de cima (RF2) nas outras pontas.\n\nUse o gabarito de 4 cm para o vão. Confira o esquadro.",
+      "erro_comum": "Medir o vão sempre a partir da última ripa. Os erros se somam e a última ripa fica fora do lugar. Marque tudo no trilho antes de colar."
+    },
+    {
+      "titulo": "Monte o painel de trás",
+      "pecas": [
+        "RT1",
+        "RT2",
+        "VT01",
+        "VT02",
+        "VT03",
+        "VT04",
+        "VT05",
+        "VT06",
+        "VT07",
+        "VT08",
+        "VT09",
+        "VT10",
+        "VT11",
+        "VT12",
+        "VT13",
+        "VT14",
+        "VT15",
+        "VT16",
+        "VT17",
+        "VT18",
+        "VT19",
+        "VT20",
+        "VT21",
+        "VT22",
+        "VT23",
+        "VT24",
+        "VT25"
+      ],
+      "texto": "Repita o painel da frente, igual, com RT1, RT2 e as 25 ripas de trás.\n\nEsse lado fica contra a parede ou escondido pela toalha.",
+      "erro_comum": "Fazer o painel de trás com as ripas em posição diferente da frente. Confira com o painel da frente em cima: as ripas precisam coincidir."
+    },
+    {
+      "titulo": "Monte o painel lateral esquerdo",
+      "pecas": [
+        "RE1",
+        "RE2",
+        "VE1",
+        "VE2",
+        "VE3",
+        "VE4",
+        "VE5",
+        "VE6"
+      ],
+      "texto": "Mesma ideia dos painéis, em menor: 6 ripas entre os dois trilhos de 43 cm.\n\n- A primeira ripa fica a 4 cm da ponta do trilho.\n- As outras seguem a cada 6,5 cm.\n\nO último vão também fica com 4 cm.",
+      "erro_comum": "Cortar o trilho com 51 cm. Ele tem 43 cm: os 8 cm restantes são os trilhos da frente e de trás."
+    },
+    {
+      "titulo": "Monte o painel lateral direito",
+      "pecas": [
+        "RD1",
+        "RD2",
+        "VD1",
+        "VD2",
+        "VD3",
+        "VD4",
+        "VD5",
+        "VD6"
+      ],
+      "texto": "Repita o painel lateral esquerdo com RD1, RD2 e as 6 ripas da direita.",
+      "erro_comum": "Montar sem conferir com o outro lado. Os dois painéis laterais são iguais; a posição das ripas precisa bater."
+    },
+    {
+      "titulo": "Una os 4 painéis",
+      "pecas": [],
+      "texto": "Trabalhe em piso plano.\n\n- Em pé, junte o painel da frente e o de trás, afastados 43 cm.\n- Encaixe os painéis laterais entre eles; os trilhos laterais encostam na face de dentro dos trilhos da frente e de trás.\n- Cole e fixe cada junção com uma cavilha de 8 mm.\n- Meça as duas diagonais. Se forem iguais, a base está no esquadro.",
+      "erro_comum": "Colar sem medir as diagonais. Se diferirem em mais de 3 mm, empurre os cantos até igualar antes de a cola secar."
+    },
+    {
+      "titulo": "Lixe tudo",
+      "pecas": [],
+      "texto": "Lixe o tampo e a base com grão 120 e depois com grão 220, sempre a favor do veio.\n\n- Quebre as quinas do tampo e das ripas com a lixa.\n- Tire o pó com pano seco.",
+      "erro_comum": "Lixar só o tampo. As ripas ficam ásperas e farpam. Lixe também entre as ripas com uma lixa dobrada."
+    },
+    {
+      "titulo": "Prenda o tampo na base",
+      "pecas": [],
+      "texto": "Vire o tampo de cabeça para baixo sobre um cobertor e apoie a base de cabeça para baixo sobre ele, centralizada: 20,75 cm de cada ponta e 12 cm das bordas da frente e de trás.\n\n- Passe cola nos trilhos de cima.\n- Fixe 10 cantoneiras por dentro da base: 3 na frente, 3 atrás e 2 em cada lateral.\n- Use só os parafusos de 12 mm.",
+      "erro_comum": "Usar parafuso de 40 mm nas cantoneiras. Ele atravessa o tampo de 2,5 cm e sai pela parte de cima."
+    }
+  ],
+  "acabamento": [
+    {
+      "titulo": "Verniz ou stain",
+      "texto": "Passe a primeira demão de verniz poliuretano acetinado com pincel, no sentido do veio.\n\nDeixe secar 4 horas, lixe de leve com grão 220 e passe a segunda demão. Para o tom avermelhado da foto, aplique antes uma demão de tingidor tipo mogno."
+    },
+    {
+      "titulo": "Pés de feltro",
+      "texto": "Cole o feltro autoadesivo sob o trilho de baixo, em 8 pontos, para não riscar o piso."
+    }
+  ],
+  "instalacao": [
+    {
+      "titulo": "Posicione e nivele",
+      "texto": "Coloque a mesa no local da festa e confira com o nível se o tampo está reto. Calce com feltro, se precisar.\n\nCubra com toalha ou deixe a madeira à mostra."
+    },
+    {
+      "titulo": "Transporte",
+      "texto": "Carregue em duas pessoas, pelas pontas do tampo, sem puxar pelas ripas."
+    }
+  ],
+  "checklist": [
+    "O tampo está plano e sem degrau entre as tábuas.",
+    "A mesa está firme: não balança ao empurrar de lado.",
+    "As ripas estão retas e com vão igual de 4 cm.",
+    "Nenhuma quina ou farpa nas ripas e no tampo.",
+    "O verniz secou por completo (3 dias) antes de colocar objetos."
+  ],
+  "glossario": [
+    {
+      "termo": "Cedrinho",
+      "definicao": "Madeira clara e leve, fácil de trabalhar, vendida em tábuas aparelhadas."
+    },
+    {
+      "termo": "Tábua aparelhada",
+      "definicao": "Tábua já alisada e com espessura e largura padronizadas."
+    },
+    {
+      "termo": "Refilar",
+      "definicao": "Cortar uma faixa da lateral da tábua para deixá-la mais estreita."
+    },
+    {
+      "termo": "Cavilha",
+      "definicao": "Pino de madeira que alinha e reforça a junção de duas peças."
+    },
+    {
+      "termo": "Ripa",
+      "definicao": "Peça fina e estreita de madeira, aqui usada em pé, formando as paredes da base."
+    },
+    {
+      "termo": "Trilho",
+      "definicao": "Peça reta que une as pontas das ripas e dá rigidez à base."
+    },
+    {
+      "termo": "Esquadro",
+      "definicao": "Ângulo reto de 90 graus. Se as duas diagonais de um retângulo têm o mesmo tamanho, ele está no esquadro."
+    },
+    {
+      "termo": "Pré-furo",
+      "definicao": "Furo fino feito antes do parafuso, para a madeira não rachar."
+    },
+    {
+      "termo": "Cantoneira",
+      "definicao": "Peça de aço em L, com furos, que une duas peças em ângulo reto."
+    },
+    {
+      "termo": "Veio",
+      "definicao": "Direção das fibras da madeira, que se vê como riscos no sentido do comprimento."
+    },
+    {
+      "termo": "Empenar",
+      "definicao": "Quando a madeira entorta com a umidade ou a falta de apoio."
+    },
+    {
+      "termo": "Gabarito",
+      "definicao": "Peça-guia usada para repetir a mesma medida sem usar a trena."
+    }
+  ],
+  "fotos": [
+    "fotos/foto-01.jpg",
+    "fotos/foto-02.jpg",
+    "fotos/foto-03.jpg",
+    "fotos/foto-04.jpg"
+  ]
+}
