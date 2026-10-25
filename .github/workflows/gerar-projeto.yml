@@ -18,11 +18,12 @@ concurrency:
 
 jobs:
   gerar:
-    # portão de custo: rótulo "projeto" + autor listado em USUARIOS_PERMITIDOS (logins separados por vírgula, sem espaço)
+    # PORTÃO DE USUÁRIOS DESLIGADO PARA TESTE. Para religar, devolva esta linha ao "if" abaixo:
+    #   contains(format(',{0},', vars.USUARIOS_PERMITIDOS), format(',{0},', github.actor)) &&
+    # Enquanto isso, o claude-code-action ainda só roda para quem tem permissão de escrita no repositório.
     if: >-
       contains(github.event.issue.labels.*.name, 'projeto') &&
       !github.event.issue.pull_request &&
-      contains(format(',{0},', vars.USUARIOS_PERMITIDOS), format(',{0},', github.actor)) &&
       (github.event_name == 'issues' || startsWith(github.event.comment.body, 'ajuste'))
     runs-on: ubuntu-latest
     timeout-minutes: 30

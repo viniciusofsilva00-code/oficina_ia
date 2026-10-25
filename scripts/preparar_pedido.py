@@ -144,8 +144,10 @@ def main():
         comentarios = comentarios_api(os.environ["GITHUB_REPOSITORY"], numero, token)
     else:
         comentarios = []
+    # lista vazia = portão desligado: aceita ajuste de qualquer autor (menos bots)
     ajustes = [c for c in comentarios
-               if (c.get("user", {}).get("login", "").lower() in permitidos)
+               if (c.get("user", {}).get("login", "").lower() in permitidos
+                   or (not permitidos and not c.get("user", {}).get("login", "").endswith("[bot]")))
                and sem_acento(c.get("body", "")).lstrip().startswith("ajuste")]
 
     # id NNN-slug: reaproveita a pasta se o número já existir
