@@ -50,7 +50,9 @@ def sem_acento(s):
 def slugify(titulo):
     t = re.sub(r"^\s*\[?projeto\]?\s*[:\-–]?\s*", "", titulo, flags=re.I)
     s = re.sub(r"[^a-z0-9]+", "-", sem_acento(t)).strip("-")
-    return (s[:40].rstrip("-") or "projeto")
+    if len(s) > 40:  # corta na última palavra inteira
+        s = s[:41].rsplit("-", 1)[0]
+    return s or "projeto"
 
 
 def ler_formulario(corpo):

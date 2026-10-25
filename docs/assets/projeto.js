@@ -50,7 +50,7 @@
     else {
       selo = '<div class="seal bad"><span class="ico">erro nas medidas</span><div><strong>' + C.erros.length + " problema(s) encontrados.</strong> Não corte nenhuma chapa.</div></div>";
       naoCorte = '<div class="naocorte"><h3>Não corte: o projeto não fechou</h3><ul>' + C.erros.map(function (e) { return "<li>" + esc(e.msg) + "</li>"; }).join("") +
-        '</ul><p class="note">Peça a correção comentando na issue com "ajuste:" e o que mudar.</p></div>';
+        '</ul><p class="note">Peça a correção pelo botão pedir ajuste, dizendo o que mudar.</p></div>';
     }
 
     var chapas = (P.compras || []).filter(function (c) { return c.material; });
@@ -76,7 +76,7 @@
     }).concat((P.premissas || []).map(function (m) {
       return '<div><div><b>' + esc(m.nome) + '</b> <span class="tag prem">PREMISSA</span></div><div class="v">' + num(m.valor) + " " + esc(m.unidade) + '</div><div class="note">Como conferir: ' + esc(m.como_conferir) + "</div></div>";
     }));
-    html += '<section id="premissas"><p class="eyebrow">antes de cortar</p><h2>Premissas a confirmar</h2><p class="lead">O que foi medido nas fotos aparece como MEDIDO. O que eu estimei aparece como PREMISSA: meça antes de cortar e, se for diferente, peça um ajuste na issue.</p>' +
+    html += '<section id="premissas"><p class="eyebrow">antes de cortar</p><h2>Premissas a confirmar</h2><p class="lead">O que foi medido nas fotos aparece como MEDIDO. O que eu estimei aparece como PREMISSA: meça antes de cortar e, se for diferente, use o botão pedir ajuste no topo da página.</p>' +
       '<div class="lista-prem">' + linhasPrem.join("") + "</div>" +
       ((P.perguntas || []).length ? '<div class="card" style="margin-top:16px"><h3>Dúvidas que ficaram</h3><ul>' + P.perguntas.map(function (q) { return "<li>" + esc(q) + "</li>"; }).join("") + "</ul></div>" : "") + "</section>";
 

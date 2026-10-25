@@ -1,20 +1,21 @@
 # oficina_ia
 
-Projetos de marcenaria a partir de fotos e de uma ideia. Alguém abre uma issue pelo celular com as fotos; o GitHub Actions roda o Claude Code com o **plano Claude do dono do repositório** (sem chave de API), gera o `projeto.json`, valida as medidas e publica a página no GitHub Pages. Um projeto vini_lab.
+Projetos de marcenaria a partir de fotos e de uma ideia. O pedido sai do próprio site (`docs/pedir/`), que envia as fotos e abre uma issue pela API do GitHub; o GitHub Actions roda o Claude Code com o **plano Claude do dono do repositório** (sem chave de API), gera o `projeto.json`, valida as medidas e publica a página no GitHub Pages. Um projeto vini_lab.
 
 Para quem vai pedir projetos: [COMO-USAR.md](COMO-USAR.md).
 
 ## Como funciona
 
 ```
-issue (formulário) ──► preparar_pedido.py ──► Claude escreve projeto.json ──► validar_projeto.py (até 5 rodadas)
+site /pedir (ou formulário de issue) ──► issue ──► preparar_pedido.py ──► Claude escreve projeto.json ──► validar_projeto.py (até 5 rodadas)
                                                                                      │
                      comentário na issue com o link ◄── commit + push ◄── atualizar_indice.py
 ```
 
 - `projeto.json` é a única fonte de verdade. `docs/assets/projeto.js` desenha tudo a partir dele e do `calculado.json`.
 - Projeto que não fecha é publicado com o aviso "não corte".
-- Comentário começando com `ajuste:` refaz o projeto a partir da versão atual.
+- Comentário começando com `ajuste:` (pelo site ou na issue) refaz o projeto a partir da versão atual.
+- O site usa uma chave de acesso fine-grained (Contents e Issues = Read and write, só neste repositório), guardada no navegador do aparelho. As fotos enviadas pelo site ficam em `entrada/`.
 
 ## Configuração (só o dono do repositório)
 
@@ -25,7 +26,7 @@ issue (formulário) ──► preparar_pedido.py ──► Claude escreve projet
    ```
    Copie o token e crie o secret em *Settings → Secrets and variables → Actions → New repository secret*: nome `CLAUDE_CODE_OAUTH_TOKEN`.
 3. **Variáveis** (mesma tela, aba *Variables*):
-   - `USUARIOS_PERMITIDOS`: logins do GitHub separados por vírgula, sem espaço (ex.: `seulogin,loginDoPai`). Só eles disparam a geração.
+   - `USUARIOS_PERMITIDOS`: logins do GitHub separados por vírgula, sem espaço (ex.: `seulogin,loginDoPai`). Só eles disparam a geração. (Portão desligado para teste em `gerar-projeto.yml`; veja o comentário lá para religar.)
    - `MODELO_CLAUDE` (opcional): `sonnet` (padrão) ou `opus`.
 4. **Permissão das Actions:** *Settings → Actions → General → Workflow permissions → Read and write permissions*.
 5. **GitHub Pages:** *Settings → Pages → Deploy from a branch → `main` / `docs`*.
@@ -56,6 +57,9 @@ python3 scripts/validar_projeto.py docs/projetos/000-gabinete-pia-60
 ```
 ```bash
 python3 tests/capturas.py
+```
+```bash
+python3 tests/teste_pedir.py
 ```
 
 `tests/capturas.py` precisa de `pip install playwright pillow pillow-heif` e `python -m playwright install chromium`.

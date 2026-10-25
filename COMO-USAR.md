@@ -1,40 +1,33 @@
 # Como pedir um projeto
 
-## 1. Tire as fotos
+Tudo pelo site, no celular: https://viniciusofsilva00-code.github.io/oficina_ia/
 
-- Fotografe o lugar onde o móvel vai ficar e o que ele vai receber (a pia, a máquina, o nicho).
-- Encoste a **trena** em cada medida importante e fotografe de frente, com os números legíveis: largura, profundidade, altura.
-- Uma foto geral e uma foto por medida. Até 12 fotos.
+## 1. Conecte o aparelho (uma vez só)
 
-## 2. Faça o pedido
+Na primeira vez, o site pede uma **chave de acesso** do GitHub:
 
-1. Abra a página da oficina no celular e toque em **novo projeto →**.
-2. Entre na sua conta do GitHub, se pedir.
-3. Preencha:
-   - **Ideia**: o que você quer, em uma ou duas frases.
-   - **Fotos**: toque na caixa e escolha as fotos. Espere cada uma terminar de subir.
-   - **Medidas que você já sabe**: o que tiver anotado.
-   - **Onde o móvel vai ficar** e **Material** (se não souber, deixe "escolha por mim").
-4. Toque em **Submit new issue**.
+1. Abra https://github.com/settings/personal-access-tokens/new
+2. Nome: `oficina`. Validade: a que preferir.
+3. **Repository access** → **Only select repositories** → marque `oficina_ia`.
+4. **Permissions → Repository permissions**: **Contents** = Read and write; **Issues** = Read and write.
+5. **Generate token**, copie e cole no site. Pronto: o aparelho fica conectado.
 
-Em 1 minuto aparece o comentário "Recebi o pedido". Em uns 5 a 10 minutos vem outro com o **link do projeto**.
+## 2. Tire as fotos
 
-## 3. Use a página
+- Fotografe o lugar e o que o móvel vai receber.
+- Encoste a **trena** em cada medida e fotografe de frente, com o número legível.
+- Um esboço à mão com as medidas escritas também funciona.
 
-- **Premissas a confirmar**: o que não deu para medir nas fotos. Meça antes de cortar.
+## 3. Faça o pedido
+
+Toque em **novo projeto →**, escreva a ideia, anexe as fotos, escolha o material e toque em **Enviar pedido**. A tela mostra o andamento; em uns 5 a 10 minutos aparece **Abrir o projeto →**.
+
+## 4. Use a página do projeto
+
+- **Premissas a confirmar**: o que não deu para medir. Meça antes de cortar.
 - **Medidas conferidas** (selo verde): as contas fecharam. Selo vermelho: não corte.
-- **Modelo 3D**: gire com o dedo; o controle de montagem mostra o móvel passo a passo.
-- **Lista de corte** e **plano de corte**: leve para a madeireira; muitas cortam as peças.
-- **Lista de compras**, **ferramentas** e **checklist**: dá para ir marcando.
+- **Modelo 3D**, **lista e plano de corte**, **compras**, **passo a passo** e **checklist**.
 
-## 4. Peça um ajuste
+## 5. Peça um ajuste ou responda perguntas
 
-Na mesma issue, escreva um comentário que **comece com `ajuste:`**. Exemplos:
-
-- `ajuste: a pia tem 50 cm, não 60`
-- `ajuste: quero uma prateleira dentro`
-- `ajuste: a altura final é 80 cm`
-
-O projeto é refeito com a mudança e vem um link novo (o mesmo endereço, atualizado).
-
-Se a oficina responder com perguntas, responda também com `ajuste:` no começo.
+Em **meus pedidos**, abra o pedido e escreva o que mudar (ex.: `a altura final é 80 cm`). Se a oficina fizer perguntas, a resposta vai no mesmo campo. O projeto é refeito no mesmo endereço.
