@@ -1,4 +1,4 @@
-"""Testes do validador: o projeto 001 passa e 7 versões quebradas de propósito são recusadas.
+"""Testes do validador: o projeto-gabarito 000 passa e 7 versões quebradas de propósito são recusadas.
 
 Rodar: python3 -m unittest discover -s tests -v
 """
@@ -12,7 +12,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ / "scripts"))
 from validar_projeto import validar  # noqa: E402
 
-BASE = json.loads((RAIZ / "docs/projetos/001-gabinete-pia-60/projeto.json").read_text(encoding="utf-8"))
+BASE = json.loads((RAIZ / "docs/projetos/000-gabinete-pia-60/projeto.json").read_text(encoding="utf-8"))
 
 
 def peca(p, pid):
@@ -26,7 +26,7 @@ def quebrar(fn):
 
 
 class ProjetoGabarito(unittest.TestCase):
-    def test_001_aprovado(self):
+    def test_000_aprovado(self):
         c = validar(copy.deepcopy(BASE))
         self.assertEqual(c["status"], "ok", c["erros"])
         self.assertEqual(len(c["plano_corte"][0]["chapas"]), 1)
@@ -66,6 +66,23 @@ class CasosQuebrados(unittest.TestCase):
     def test_7_chapa_insuficiente(self):
         # chapa pequena: o plano pede mais chapas do que a lista de compras tem
         self.assertRecusa(quebrar(lambda p: p["materiais"][0].__setitem__("chapa", {"comprimento": 100, "largura": 90})), "chapa_insuficiente")
+
+
+class MadeiraMacica(unittest.TestCase):
+    def test_tabua_entra_no_plano(self):
+        p = copy.deepcopy(BASE)
+        p["materiais"].append({"id": "cedro18", "nome": "Tábua de cedrinho 1,8 × 30 cm", "tipo": "tabua", "espessura_mm": 18,
+                               "chapa": {"comprimento": 300, "largura": 30}, "veio": True})
+        for pid in ("T1", "T2"):
+            peca(p, pid)["material"] = "cedro18"
+            peca(p, pid)["veio"] = "x"
+        c = validar(p)
+        self.assertIn("chapa_insuficiente", [e["codigo"] for e in c["erros"]])  # falta a tábua na lista de compras
+        p["compras"].append({"categoria": "Madeira", "item": "Tábua de cedrinho", "quantidade": 1, "unidade": "tábua", "material": "cedro18"})
+        c = validar(p)
+        self.assertEqual(c["status"], "ok", c["erros"])
+        tabua = next(m for m in c["plano_corte"] if m["material"] == "cedro18")
+        self.assertEqual(len(tabua["chapas"]), 1)
 
 
 class Avisos(unittest.TestCase):

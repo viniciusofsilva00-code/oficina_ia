@@ -14,7 +14,7 @@ Um arquivo por projeto, em `docs/projetos/<NNN-slug>/projeto.json`. É a única 
 ```jsonc
 {
   "versao": 1,
-  "id": "001-gabinete-pia-60",            // igual ao nome da pasta
+  "id": "000-gabinete-pia-60",            // igual ao nome da pasta
   "titulo": "Gabinete da pia 60",
   "resumo": "Uma ou duas frases sobre o móvel.",
   "pedido_original": "Texto da ideia como veio no formulário.",
@@ -39,7 +39,9 @@ Um arquivo por projeto, em `docs/projetos/<NNN-slug>/projeto.json`. É a única 
 
   "materiais": [
     {"id": "mdf18", "nome": "MDF RU 18 mm", "tipo": "chapa", "espessura_mm": 18,
-     "chapa": {"comprimento": 275, "largura": 184}, "veio": false}   // veio=true: compensado, madeira
+     "chapa": {"comprimento": 275, "largura": 184}, "veio": false},  // veio=true: compensado, madeira
+    {"id": "cedro25", "nome": "Tábua de cedrinho 2,5 × 30 cm", "tipo": "tabua", "espessura_mm": 25,
+     "chapa": {"comprimento": 300, "largura": 30}, "veio": true}      // tábua: "chapa" = medida da tábua comprada
   ],
 
   "pecas": [

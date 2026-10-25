@@ -136,3 +136,42 @@ class PreparadorIssueFalsa(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Redireciona(http.server.BaseHTTPRequestHandler):
+    """Imita o anexo do GitHub: /anexo redireciona para outro host que recusa o token com 400."""
+    destino = ""
+
+    def do_GET(self):
+        if self.path == "/anexo":
+            self.send_response(302)
+            self.send_header("Location", self.destino)
+            self.end_headers()
+        elif self.headers.get("Authorization"):
+            self.send_response(400)
+            self.end_headers()
+        else:
+            self.send_response(200)
+            self.end_headers()
+            self.wfile.write(b"imagem")
+
+    def log_message(self, *a):
+        pass
+
+
+@unittest.skipUnless(TEM_PIL, "Pillow não instalado")
+class DownloadSemVazarToken(unittest.TestCase):
+    def test_token_nao_segue_para_outro_host(self):
+        sys.path.insert(0, str(RAIZ / "scripts"))
+        import preparar_pedido
+        srv = http.server.ThreadingHTTPServer(("127.0.0.1", 0), Redireciona)
+        porta = srv.server_address[1]
+        Redireciona.destino = f"http://localhost:{porta}/arquivo"
+        threading.Thread(target=srv.serve_forever, daemon=True).start()
+        try:
+            req = preparar_pedido.urllib.request.Request(f"http://127.0.0.1:{porta}/anexo", headers={"Authorization": "Bearer x"})
+            with preparar_pedido.ABRIR.open(req, timeout=10) as r:
+                self.assertEqual(r.read(), b"imagem")
+        finally:
+            srv.shutdown()
+            srv.server_close()

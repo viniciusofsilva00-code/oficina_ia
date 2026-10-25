@@ -15,6 +15,7 @@ import os
 import re
 import sys
 import unicodedata
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -81,16 +82,38 @@ def achar_imagens(texto):
     return urls
 
 
+class SemAuthNoRedirect(urllib.request.HTTPRedirectHandler):
+    """Anexos do GitHub redirecionam para um link assinado da Amazon, que recusa (400) o token do GitHub."""
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        novo = super().redirect_request(req, fp, code, msg, headers, newurl)
+        if novo is not None and urllib.parse.urlparse(newurl).hostname != urllib.parse.urlparse(req.full_url).hostname:
+            novo.remove_header("Authorization")
+        return novo
+
+
+ABRIR = urllib.request.build_opener(SemAuthNoRedirect)
+
+
 def baixar(url, token):
-    req = urllib.request.Request(url, headers={"User-Agent": "oficina_ia", "Accept": "image/*,*/*"})
     host = urllib.parse.urlparse(url).hostname or ""
+    tentativas = [False]
     if token and (host == "github.com" or host.endswith(".githubusercontent.com")):
-        req.add_header("Authorization", f"Bearer {token}")
-    with urllib.request.urlopen(req, timeout=60) as r:
-        dados = r.read(MAX_BYTES + 1)
-    if len(dados) > MAX_BYTES:
-        raise ValueError("arquivo maior que 30 MB")
-    return dados
+        tentativas.append(True)  # repositório privado: tenta de novo com o token
+    erro = None
+    for com_token in tentativas:
+        req = urllib.request.Request(url, headers={"User-Agent": "oficina_ia", "Accept": "image/*,*/*"})
+        if com_token:
+            req.add_header("Authorization", f"Bearer {token}")
+        try:
+            with ABRIR.open(req, timeout=60) as r:
+                dados = r.read(MAX_BYTES + 1)
+        except urllib.error.HTTPError as e:
+            erro = e
+            continue
+        if len(dados) > MAX_BYTES:
+            raise ValueError("arquivo maior que 30 MB")
+        return dados
+    raise erro
 
 
 def salvar(dados, destinos):

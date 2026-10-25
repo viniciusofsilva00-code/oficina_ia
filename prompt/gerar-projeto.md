@@ -9,7 +9,7 @@ Escrever **um único arquivo**, `<pasta do projeto>/projeto.json`, que descreve 
 ## Contexto
 
 - O pedido está em `work/pedido.md`: id, pasta, modo (`novo` ou `ajuste`), campos do formulário, fotos em `work/fotos/` e os ajustes pedidos.
-- O formato está em `prompt/ESQUEMA.md`. O projeto `docs/projetos/001-gabinete-pia-60/projeto.json` é o gabarito: siga o nível de detalhe, o tom e a estrutura dele.
+- O formato está em `prompt/ESQUEMA.md`. O projeto `docs/projetos/000-gabinete-pia-60/projeto.json` é o gabarito: siga o nível de detalhe, o tom e a estrutura dele.
 - Quem lê a página é leigo, no celular, na oficina. Português do Brasil, frases curtas; cada termo técnico entra no `glossario`.
 
 ## Evidências e precedência
@@ -21,7 +21,7 @@ Escrever **um único arquivo**, `<pasta do projeto>/projeto.json`, que descreve 
 
 ## Restrições de projeto
 
-- Só peças retas (caixas), em chapas comerciais no Brasil: MDF 15/18/25 mm (275 × 184 cm), MDF RU, compensado 15/18 mm (220 × 160 cm), compensado naval. Perto de água: MDF RU ou compensado naval.
+- Só peças retas (caixas), em materiais comerciais no Brasil: chapas de MDF 15/18/25 mm (275 × 184 cm), MDF RU, compensado 15/18 mm (220 × 160 cm), compensado naval; ou madeira maciça em tábuas (`"tipo": "tabua"`), como pinus, cedrinho ou eucalipto, com espessura e largura comerciais (2 ou 2,5 cm × 10, 15, 20 ou 30 cm, comprimento de 300 cm) e `"veio": true`. Peça mais larga que a tábua vira duas peças lado a lado. Perto de água: MDF RU, compensado naval ou madeira maciça envernizada.
 - A estrutura mais simples que funcione: laterais, base, travessas, portas, rodapé. Gaveta só se o pedido pedir e houver espaço.
 - Declare em `folgas` as áreas que precisam ficar livres: cuba, sifão, canos, eletrodomésticos, corrediças de gaveta.
 - Declare em `conferencias` as contas que fecham o móvel: largura, profundidade, altura, sobras, vão livre.

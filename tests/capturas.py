@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Capturas de tela com Playwright: galeria e projeto 001 a 1280 px e 390 px.
+"""Capturas de tela com Playwright: galeria e projeto-gabarito 000 a 1280 px e 390 px.
 
 Confere: nenhum erro no console, sem rolagem horizontal e 3D renderizado (window.__oficina3d).
 Se a CDN não responder, serve o Three.js de tests/vendor/ via page.route.
@@ -28,7 +28,7 @@ CDN = {
     "three.min.js": "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js",
     "OrbitControls.js": "https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js",
 }
-PAGINAS = [("galeria", "/"), ("projeto-001", "/projetos/001-gabinete-pia-60/")]
+PAGINAS = [("galeria", "/"), ("projeto-000", "/projetos/000-gabinete-pia-60/")]
 LARGURAS = [1280, 390]
 
 

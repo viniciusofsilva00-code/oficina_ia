@@ -52,7 +52,7 @@ issue (formulário) ──► preparar_pedido.py ──► Claude escreve projet
 python3 -m unittest discover -s tests -v
 ```
 ```bash
-python3 scripts/validar_projeto.py docs/projetos/001-gabinete-pia-60
+python3 scripts/validar_projeto.py docs/projetos/000-gabinete-pia-60
 ```
 ```bash
 python3 tests/capturas.py

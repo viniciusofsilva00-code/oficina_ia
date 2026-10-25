@@ -154,10 +154,11 @@ def validar(proj):
     for m in proj["materiais"]:
         if not isinstance(m.get("espessura_mm"), (int, float)):
             R.erro("material_invalido", f"O material '{m.get('id')}' precisa de 'espessura_mm'.")
-        if m.get("tipo", "chapa") == "chapa":
-            ch = m.get("chapa") or {}
-            if not all(isinstance(ch.get(k), (int, float)) for k in ("comprimento", "largura")):
-                R.erro("material_invalido", f"O material '{m.get('id')}' precisa de 'chapa': {{'comprimento', 'largura'}} em cm.")
+        if m.get("tipo", "chapa") not in ("chapa", "tabua"):
+            R.erro("material_invalido", f"O material '{m.get('id')}' tem tipo '{m.get('tipo')}'. Use 'chapa' ou 'tabua'.")
+        ch = m.get("chapa") or {}
+        if not all(isinstance(ch.get(k), (int, float)) for k in ("comprimento", "largura")):
+            R.erro("material_invalido", f"O material '{m.get('id')}' precisa de 'chapa': {{'comprimento', 'largura'}} em cm (para tábua: comprimento e largura da tábua comprada).")
     if R.erros:
         return calc
 
@@ -310,8 +311,6 @@ def validar(proj):
     plano, chapas_ok = [], True
     for mid, itens in itens_por_mat.items():
         m = materiais[mid]
-        if m.get("tipo", "chapa") != "chapa":
-            continue
         ch = m["chapa"]
         chapas, grandes = empacotar(itens, ch["comprimento"], ch["largura"])
         for g in grandes:
@@ -321,7 +320,7 @@ def validar(proj):
         compradas = sum(c.get("quantidade", 0) for c in proj["compras"] if c.get("material") == mid)
         if compradas < len(chapas):
             chapas_ok = False
-            R.erro("chapa_insuficiente", f"O plano de corte de {m['nome']} usa {len(chapas)} chapa(s), mas a lista de compras tem {compradas}. Ajuste a quantidade no item de compras com \"material\": \"{mid}\".")
+            R.erro("chapa_insuficiente", f"O plano de corte de {m['nome']} usa {len(chapas)} {'tábua(s)' if m.get('tipo') == 'tabua' else 'chapa(s)'}, mas a lista de compras tem {compradas}. Ajuste a quantidade no item de compras com \"material\": \"{mid}\".")
     calc["plano_corte"] = plano
     if chapas_ok:
         R.ok("Chapas da lista de compras bastam: " + ", ".join(f"{len(p['chapas'])} × {p['nome']}" for p in plano))
