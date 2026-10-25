@@ -4,8 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>oficina_ia</title>
-<!-- se a galeria não estiver em <dono>.github.io/<repo>, preencha: dono/repo -->
-<meta name="oficina-repo" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="assets/oficina.css">
@@ -21,7 +19,7 @@
   <p class="eyebrow">projetos de marcenaria a partir de fotos</p>
   <h1>Do retrato com a trena ao <span class="hl">móvel pronto</span></h1>
   <p class="lead">Você manda as fotos e a ideia. Em alguns minutos volta um projeto com modelo 3D, lista e plano de corte, compras e montagem passo a passo, com as medidas conferidas por código.</p>
-  <p><a class="btn pri" id="novo" href="#">novo projeto →</a> <span class="note" style="margin-left:8px">abre o formulário no GitHub</span></p>
+  <p style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn pri" id="novo" href="pedir/#novo">novo projeto →</a><a class="btn" href="pedir/#pedidos">meus pedidos</a></p>
   <section style="padding-top:32px">
     <h2>Projetos</h2>
     <div class="galeria" id="galeria"><p class="note">carregando…</p></div>
@@ -34,11 +32,6 @@
   "use strict";
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
   var f1 = function (x) { return (Math.round((x || 0) * 10) / 10).toFixed(1).replace(".", ","); };
-  var repo = document.querySelector('meta[name="oficina-repo"]').content.trim();
-  if (!repo && /\.github\.io$/.test(location.hostname)) repo = location.hostname.split(".")[0] + "/" + location.pathname.split("/").filter(Boolean)[0];
-  var novo = document.getElementById("novo");
-  if (repo) novo.href = "https://github.com/" + repo + "/issues/new?template=novo-projeto.yml";
-  else { novo.removeAttribute("href"); novo.title = "Configure o repositório na meta oficina-repo"; }
   fetch("projetos/indice.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (lista) {
     var g = document.getElementById("galeria");
     if (!lista.length) { g.innerHTML = '<p class="note">Nenhum projeto ainda. Use o botão acima para pedir o primeiro.</p>'; return; }

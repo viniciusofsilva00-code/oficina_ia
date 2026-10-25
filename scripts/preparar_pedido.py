@@ -56,7 +56,8 @@ def slugify(titulo):
 def ler_formulario(corpo):
     """Issue forms viram blocos '### Rótulo' + resposta."""
     campos, atual = {}, None
-    for linha in (corpo or "").splitlines():
+    corpo = re.sub(r"<!--.*?-->", "", corpo or "", flags=re.S)
+    for linha in corpo.splitlines():
         m = re.match(r"^###\s+(.+?)\s*$", linha)
         if m:
             rot = sem_acento(m.group(1))

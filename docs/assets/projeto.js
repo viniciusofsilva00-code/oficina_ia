@@ -67,7 +67,8 @@
       '<dl class="facts"><dt>chapas</dt><dd>' + (resumoCompra || "—") + "</dd>" +
       "<dt>tempo</dt><dd>" + esc(P.tempo) + "</dd>" +
       "<dt>dificuldade</dt><dd>" + esc(P.dificuldade) + " de 5</dd>" +
-      "<dt>premissas</dt><dd>" + (P.premissas || []).length + ' a conferir antes do corte · <a href="#premissas">ver →</a></dd></dl>' + selo + "</div></div>" + naoCorte + "</section>";
+      "<dt>premissas</dt><dd>" + (P.premissas || []).length + ' a conferir antes do corte · <a href="#premissas">ver →</a></dd></dl>' + selo +
+      (+n > 0 ? '<p class="no-print" style="margin-top:12px"><a class="btn" href="../../pedir/#p' + (+n) + '">pedir ajuste neste projeto →</a></p>' : "") + "</div></div>" + naoCorte + "</section>";
 
     /* 2. premissas */
     var linhasPrem = (P.medidas_conhecidas || []).map(function (m) {
