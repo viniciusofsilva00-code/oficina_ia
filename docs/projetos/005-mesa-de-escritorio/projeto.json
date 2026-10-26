@@ -1,0 +1,694 @@
+{
+  "versao": 1,
+  "id": "005-mesa-de-escritorio",
+  "titulo": "Mesa de escritório compacta",
+  "resumo": "Mesa de escritório de 120 × 56 cm em cedrinho maciço. Duas laterais em quadro, duas travessas e um tampo emendado. Sem gavetas, com espaço para as pernas e para a cadeira.",
+  "pedido_original": "Mesa de escritorio. Quero compacta. No escritório. Madeira maciça. Use cedrinho.",
+  "data": "2026-10-26",
+  "dificuldade": 2,
+  "tempo": "1 fim de semana · cerca de 8 h de trabalho + 2 dias de secagem do verniz",
+  "dimensoes_externas": {
+    "largura": 120,
+    "altura": 75,
+    "profundidade": 56
+  },
+  "medidas_conhecidas": [],
+  "premissas": [
+    {
+      "nome": "Largura do tampo",
+      "valor": 120,
+      "unidade": "cm",
+      "como_conferir": "Encoste a trena na parede onde a mesa vai ficar. Se couber menos de 120 cm, avise no pedido de ajuste."
+    },
+    {
+      "nome": "Profundidade do tampo",
+      "valor": 56,
+      "unidade": "cm",
+      "como_conferir": "Meça da parede até onde a cadeira precisa passar. Com 56 cm cabem notebook e teclado. São duas tábuas de 28 cm úteis."
+    },
+    {
+      "nome": "Altura final da mesa",
+      "valor": 75,
+      "unidade": "cm",
+      "como_conferir": "75 cm serve para a maioria dos adultos. Sentado, o cotovelo fica na altura do tampo. Meça do chão ao cotovelo dobrado e compare."
+    },
+    {
+      "nome": "Espessura da tábua de cedrinho",
+      "valor": 2.5,
+      "unidade": "cm",
+      "como_conferir": "Meça a tábua com paquímetro ou trena na loja. Tábua de 2 cm é comum: avise antes de cortar."
+    },
+    {
+      "nome": "Sobra do tampo para fora das pernas",
+      "valor": 5,
+      "unidade": "cm",
+      "como_conferir": "Dá para encostar o joelho sem bater na perna. Mude o valor no pedido de ajuste se quiser outro."
+    },
+    {
+      "nome": "Vão livre entre as pernas",
+      "valor": 105,
+      "unidade": "cm",
+      "como_conferir": "Cadeira de escritório tem cerca de 60 cm de largura. Meça a sua."
+    },
+    {
+      "nome": "Altura livre embaixo das travessas",
+      "valor": 59.5,
+      "unidade": "cm",
+      "como_conferir": "Sentado, meça do chão até o topo da coxa. Precisa ser menor que 59,5 cm."
+    },
+    {
+      "nome": "Tampo na cor da madeira",
+      "valor": "sim",
+      "unidade": "",
+      "como_conferir": "A foto de referência mostra um tampo claro, de outro material. Aqui o tampo também é de cedrinho, com verniz."
+    },
+    {
+      "nome": "Sem gavetas e sem fundo",
+      "valor": "sim",
+      "unidade": "",
+      "como_conferir": "O pedido não pede gaveta. A mesa fica aberta atrás, para passar os cabos."
+    }
+  ],
+  "perguntas": [
+    "As fotos não têm trena e o pedido só diz \"compacta\". Foi usado 120 × 56 × 75 cm. Confirme o espaço no seu escritório antes de cortar.",
+    "Quer gaveta ou passa-fio? Se sim, avise num pedido de ajuste."
+  ],
+  "conferencias": [
+    {
+      "descricao": "Largura: sobra + perna + vão + perna + sobra",
+      "soma": [
+        5,
+        2.5,
+        105,
+        2.5,
+        5
+      ],
+      "esperado": 120
+    },
+    {
+      "descricao": "Profundidade: sobra + quadro lateral + sobra",
+      "soma": [
+        5,
+        8,
+        30,
+        8,
+        5
+      ],
+      "esperado": 56
+    },
+    {
+      "descricao": "Profundidade do tampo: 2 tábuas de 28 cm",
+      "soma": [
+        28,
+        28
+      ],
+      "esperado": 56
+    },
+    {
+      "descricao": "Altura: perna + tampo",
+      "soma": [
+        72.5,
+        2.5
+      ],
+      "esperado": 75
+    },
+    {
+      "descricao": "Altura do quadro lateral: pé + vão + travessa de cima",
+      "soma": [
+        8,
+        56.5,
+        8
+      ],
+      "esperado": 72.5
+    },
+    {
+      "descricao": "Comprimento do quadro lateral: perna + travessa + perna",
+      "soma": [
+        8,
+        30,
+        8
+      ],
+      "esperado": 46
+    },
+    {
+      "descricao": "Vão livre embaixo das travessas ≥ 55 cm",
+      "soma": [
+        72.5,
+        -13
+      ],
+      "minimo": 55
+    },
+    {
+      "descricao": "Vão livre entre as pernas ≥ 90 cm",
+      "soma": [
+        105
+      ],
+      "minimo": 90
+    }
+  ],
+  "materiais": [
+    {
+      "id": "ced30",
+      "nome": "Tábua de cedrinho 2,5 × 30 cm",
+      "tipo": "tabua",
+      "espessura_mm": 25,
+      "chapa": {
+        "comprimento": 300,
+        "largura": 30
+      },
+      "veio": true
+    },
+    {
+      "id": "ced15",
+      "nome": "Tábua de cedrinho 2,5 × 15 cm",
+      "tipo": "tabua",
+      "espessura_mm": 25,
+      "chapa": {
+        "comprimento": 300,
+        "largura": 15
+      },
+      "veio": true
+    },
+    {
+      "id": "ced10",
+      "nome": "Tábua de cedrinho 2,5 × 10 cm",
+      "tipo": "tabua",
+      "espessura_mm": 25,
+      "chapa": {
+        "comprimento": 300,
+        "largura": 10
+      },
+      "veio": true
+    }
+  ],
+  "pecas": [
+    {
+      "id": "PA",
+      "nome": "Perna esquerda de trás",
+      "grupo": "Quadro esquerdo",
+      "material": "ced10",
+      "caixa": [
+        5,
+        0,
+        5,
+        2.5,
+        72.5,
+        8
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": "Do chão até o tampo."
+    },
+    {
+      "id": "PB",
+      "nome": "Perna esquerda da frente",
+      "grupo": "Quadro esquerdo",
+      "material": "ced10",
+      "caixa": [
+        5,
+        0,
+        43,
+        2.5,
+        72.5,
+        8
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": "Do chão até o tampo."
+    },
+    {
+      "id": "BA",
+      "nome": "Pé esquerdo (trenó)",
+      "grupo": "Quadro esquerdo",
+      "material": "ced10",
+      "caixa": [
+        5,
+        0,
+        13,
+        2.5,
+        8,
+        30
+      ],
+      "veio": "z",
+      "bordas": [],
+      "obs": "Fica no chão, entre as duas pernas."
+    },
+    {
+      "id": "CA",
+      "nome": "Travessa de cima esquerda",
+      "grupo": "Quadro esquerdo",
+      "material": "ced10",
+      "caixa": [
+        5,
+        64.5,
+        13,
+        2.5,
+        8,
+        30
+      ],
+      "veio": "z",
+      "bordas": [],
+      "obs": "Rente ao topo das pernas. O tampo é preso nela."
+    },
+    {
+      "id": "PC",
+      "nome": "Perna direita de trás",
+      "grupo": "Quadro direito",
+      "material": "ced10",
+      "caixa": [
+        112.5,
+        0,
+        5,
+        2.5,
+        72.5,
+        8
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": "Do chão até o tampo."
+    },
+    {
+      "id": "PD",
+      "nome": "Perna direita da frente",
+      "grupo": "Quadro direito",
+      "material": "ced10",
+      "caixa": [
+        112.5,
+        0,
+        43,
+        2.5,
+        72.5,
+        8
+      ],
+      "veio": "y",
+      "bordas": [],
+      "obs": "Do chão até o tampo."
+    },
+    {
+      "id": "BB",
+      "nome": "Pé direito (trenó)",
+      "grupo": "Quadro direito",
+      "material": "ced10",
+      "caixa": [
+        112.5,
+        0,
+        13,
+        2.5,
+        8,
+        30
+      ],
+      "veio": "z",
+      "bordas": [],
+      "obs": "Fica no chão, entre as duas pernas."
+    },
+    {
+      "id": "CB",
+      "nome": "Travessa de cima direita",
+      "grupo": "Quadro direito",
+      "material": "ced10",
+      "caixa": [
+        112.5,
+        64.5,
+        13,
+        2.5,
+        8,
+        30
+      ],
+      "veio": "z",
+      "bordas": [],
+      "obs": "Rente ao topo das pernas. O tampo é preso nela."
+    },
+    {
+      "id": "AT",
+      "nome": "Travessa comprida de trás",
+      "grupo": "Travessas",
+      "material": "ced15",
+      "caixa": [
+        7.5,
+        59.5,
+        5,
+        105,
+        13,
+        2.5
+      ],
+      "veio": "x",
+      "bordas": [],
+      "obs": "Em pé, rente ao topo. Liga as duas pernas de trás."
+    },
+    {
+      "id": "AF",
+      "nome": "Travessa comprida da frente",
+      "grupo": "Travessas",
+      "material": "ced15",
+      "caixa": [
+        7.5,
+        59.5,
+        48.5,
+        105,
+        13,
+        2.5
+      ],
+      "veio": "x",
+      "bordas": [],
+      "obs": "Em pé, rente ao topo. Liga as duas pernas da frente."
+    },
+    {
+      "id": "M1",
+      "nome": "Tampo, tábua de trás",
+      "grupo": "Tampo",
+      "material": "ced30",
+      "caixa": [
+        0,
+        72.5,
+        0,
+        120,
+        2.5,
+        28
+      ],
+      "veio": "x",
+      "bordas": [],
+      "obs": "Emendada com a tábua da frente."
+    },
+    {
+      "id": "M2",
+      "nome": "Tampo, tábua da frente",
+      "grupo": "Tampo",
+      "material": "ced30",
+      "caixa": [
+        0,
+        72.5,
+        28,
+        120,
+        2.5,
+        28
+      ],
+      "veio": "x",
+      "bordas": [],
+      "obs": "Escolha a tábua mais bonita para a frente."
+    }
+  ],
+  "referencias": [
+    {
+      "id": "notebook",
+      "nome": "Notebook",
+      "tipo": "caixa",
+      "caixa": [
+        40,
+        75,
+        15,
+        33,
+        2,
+        23
+      ]
+    }
+  ],
+  "folgas": [
+    {
+      "id": "f-pernas",
+      "nome": "Espaço das pernas e da cadeira",
+      "caixa": [
+        10,
+        0,
+        7.5,
+        100,
+        59.5,
+        41
+      ]
+    }
+  ],
+  "compras": [
+    {
+      "categoria": "Madeira",
+      "item": "Tábua de cedrinho 2,5 × 30 cm, 300 cm",
+      "quantidade": 1,
+      "unidade": "tábua",
+      "material": "ced30",
+      "obs": "Para o tampo: 2 peças de 120 cm. Peça à loja para cortar no comprimento."
+    },
+    {
+      "categoria": "Madeira",
+      "item": "Tábua de cedrinho 2,5 × 15 cm, 300 cm",
+      "quantidade": 1,
+      "unidade": "tábua",
+      "material": "ced15",
+      "obs": "Para as 2 travessas compridas de 105 cm."
+    },
+    {
+      "categoria": "Madeira",
+      "item": "Tábua de cedrinho 2,5 × 10 cm, 300 cm",
+      "quantidade": 2,
+      "unidade": "tábuas",
+      "material": "ced10",
+      "obs": "Para pernas, pés e travessas dos quadros. Escolha tábuas retas, sem empenar."
+    },
+    {
+      "categoria": "Fixação",
+      "item": "Parafuso para madeira cabeça chata 4,5 × 50 mm",
+      "quantidade": 30,
+      "unidade": "un",
+      "obs": "24 usados: 16 nos quadros, 8 nas travessas compridas."
+    },
+    {
+      "categoria": "Fixação",
+      "item": "Cavilha de madeira 8 × 40 mm",
+      "quantidade": 20,
+      "unidade": "un",
+      "obs": "12 nas junções e 6 na emenda do tampo."
+    },
+    {
+      "categoria": "Fixação",
+      "item": "Cantoneira de aço em L, 30 × 30 mm",
+      "quantidade": 8,
+      "unidade": "un",
+      "obs": "4 nas travessas compridas e 4 nas travessas de cima dos quadros."
+    },
+    {
+      "categoria": "Fixação",
+      "item": "Parafuso 3,5 × 16 mm cabeça panela",
+      "quantidade": 40,
+      "unidade": "un",
+      "obs": "32 usados: 4 por cantoneira."
+    },
+    {
+      "categoria": "Fixação",
+      "item": "Cola de madeira PVA D3, 500 g",
+      "quantidade": 1,
+      "unidade": "frasco"
+    },
+    {
+      "categoria": "Acabamento",
+      "item": "Lixa grão 120",
+      "quantidade": 3,
+      "unidade": "folhas"
+    },
+    {
+      "categoria": "Acabamento",
+      "item": "Lixa grão 220",
+      "quantidade": 4,
+      "unidade": "folhas"
+    },
+    {
+      "categoria": "Acabamento",
+      "item": "Verniz poliuretano fosco à base d'água, 0,9 L",
+      "quantidade": 1,
+      "unidade": "lata",
+      "obs": "3,2 m² × 3 demãos ÷ 12 m² por litro ≈ 0,8 L."
+    },
+    {
+      "categoria": "Acabamento",
+      "item": "Feltro adesivo para móveis",
+      "quantidade": 1,
+      "unidade": "folha",
+      "obs": "Para colar embaixo dos 2 pés."
+    }
+  ],
+  "ferramentas": [
+    {
+      "nome": "Serra circular ou serrote",
+      "uso": "Cortar as tábuas no comprimento, se a loja não cortar."
+    },
+    {
+      "nome": "2 grampos sargento de 60 cm",
+      "uso": "Seguram as tábuas do tampo na colagem."
+    },
+    {
+      "nome": "Trena, esquadro e lápis",
+      "uso": "Medir, marcar e conferir os 90°."
+    },
+    {
+      "nome": "Furadeira/parafusadeira",
+      "uso": "Pré-furos e parafusos."
+    },
+    {
+      "nome": "Brocas 3 mm e 8 mm e escareador",
+      "uso": "Pré-furo, cavilha e rebaixo da cabeça do parafuso."
+    },
+    {
+      "nome": "Lixadeira orbital ou bloco de lixa",
+      "uso": "Lixar a madeira antes do verniz."
+    },
+    {
+      "nome": "Nível de bolha",
+      "uso": "Conferir o chão e o tampo."
+    },
+    {
+      "nome": "Pincel ou rolo de espuma",
+      "uso": "Passar o verniz."
+    },
+    {
+      "nome": "Óculos, protetor de ouvido e máscara",
+      "uso": "Proteção no corte e na lixa."
+    }
+  ],
+  "passos": [
+    {
+      "titulo": "Separe e marque as peças",
+      "pecas": [],
+      "texto": "Espalhe as 12 peças no chão e meça cada uma contra a lista de corte.\n\nEscreva o código (PA, BA, M1…) a lápis na face que fica para dentro.",
+      "erro_comum": "Trocar perna com travessa de cima. As pernas têm 72,5 cm; as travessas dos quadros, só 30 cm."
+    },
+    {
+      "titulo": "Corte e lixe as peças",
+      "pecas": [],
+      "texto": "- Corte cada peça no comprimento da lista, com a serra guiada por uma régua.\n- Lixe todas as faces e bordas com lixa 120 e depois 220, sempre no sentido do veio.\n- Quebre as quinas vivas com a lixa.",
+      "erro_comum": "Lixar contra o veio. Deixa riscos que só aparecem depois do verniz."
+    },
+    {
+      "titulo": "Monte o quadro da esquerda",
+      "pecas": [
+        "PA",
+        "PB",
+        "BA",
+        "CA"
+      ],
+      "texto": "O quadro é um retângulo deitado no chão: duas pernas em pé, o pé embaixo e a travessa em cima, entre elas.\n\n- Faça 2 pré-furos de 3 mm e 1 furo de cavilha em cada ponta das travessas.\n- Passe cola na ponta, encaixe a cavilha e parafuse pela perna.\n- Confira o esquadro com a diagonal: as duas medidas têm que ser iguais.",
+      "erro_comum": "Deixar a travessa de cima abaixo do topo da perna. Ela fica rente, para o tampo encostar nas duas."
+    },
+    {
+      "titulo": "Monte o quadro da direita",
+      "pecas": [
+        "PC",
+        "PD",
+        "BB",
+        "CB"
+      ],
+      "texto": "Repita o passo anterior. Coloque o quadro da direita em cima do da esquerda e confira que são do mesmo tamanho.",
+      "erro_comum": "Parafusar pelo lado de dentro. Os parafusos entram pela face de fora da perna e as cabeças levam escareador."
+    },
+    {
+      "titulo": "Una os quadros com as travessas compridas",
+      "pecas": [
+        "AT",
+        "AF"
+      ],
+      "texto": "Deite um quadro com o lado de fora para baixo. As travessas ficam em pé, rente ao topo das pernas: AT atrás, AF na frente.\n\n- 1 cavilha e 2 parafusos em cada ponta.\n- Levante e una o outro quadro do mesmo jeito.\n- Meça as diagonais do retângulo de cima. Se forem iguais, está no esquadro.",
+      "erro_comum": "Parafusar sem conferir o esquadro. Depois de seca a cola, não tem como corrigir."
+    },
+    {
+      "titulo": "Confira o prumo e o nível",
+      "pecas": [],
+      "texto": "Ponha a estrutura no chão do escritório. Encoste o nível em cima das travessas nos dois sentidos.\n\nSe balançar, marque qual pé não toca o chão e lixe a base do outro. Tire só um pouco por vez.",
+      "erro_comum": "Cortar a perna para nivelar. O chão pode estar torto: ajuste com os feltros no fim."
+    },
+    {
+      "titulo": "Emende o tampo",
+      "pecas": [
+        "M1",
+        "M2"
+      ],
+      "texto": "As duas tábuas de 28 cm úteis viram um tampo de 56 cm.\n\n- Escolha o lado mais bonito para cima.\n- Faça 3 furos de cavilha de 8 mm em cada borda de junção.\n- Passe cola fina, junte e aperte com os grampos.\n- Limpe a cola que escorrer com pano úmido. Espere 4 h.",
+      "erro_comum": "Deixar cola seca na face. O verniz não pega nessa mancha."
+    },
+    {
+      "titulo": "Dê o acabamento",
+      "pecas": [],
+      "texto": "Lixe tudo com 220 e tire o pó. Passe o verniz na estrutura e no tampo, separados. Siga a seção de acabamento.",
+      "erro_comum": "Esquecer a borda de baixo dos pés. É por ali que a água do chão sobe."
+    },
+    {
+      "titulo": "Fixe o tampo",
+      "pecas": [],
+      "texto": "Vire o tampo com a face de baixo para cima e apoie a estrutura de cabeça para baixo sobre ele. Deixe 5 cm de sobra dos 4 lados.\n\n- 2 cantoneiras em cada travessa comprida e 2 em cada travessa de cima dos quadros.\n- Faça os furos do tampo com broca de 3 mm; os parafusos têm 16 mm e não atravessam o tampo de 25 mm.\n- Madeira maciça mexe com a umidade: não passe cola entre o tampo e a estrutura.",
+      "erro_comum": "Usar parafuso comprido. Ele atravessa o tampo e aparece em cima."
+    },
+    {
+      "titulo": "Cole os feltros e posicione a mesa",
+      "pecas": [],
+      "texto": "Desvire a mesa. Cole o feltro embaixo dos dois pés. Encoste a mesa na parede e confira o nível em cima do tampo.",
+      "erro_comum": "Colar o feltro antes do verniz secar. Ele solta."
+    }
+  ],
+  "acabamento": [
+    {
+      "titulo": "Preparar",
+      "texto": "Lixe com 220 e tire o pó com pano úmido bem torcido. Espere secar."
+    },
+    {
+      "titulo": "Verniz",
+      "texto": "3 demãos finas com pincel ou rolo de espuma, no sentido do veio. Lixe de leve com 220 entre as demãos. Secagem: 4 h entre demãos. Pode usar após 48 h."
+    },
+    {
+      "titulo": "Onde caprichar",
+      "texto": "- Topo da mesa: é onde vai o uso. Passe uma demão a mais.\n- Pontas das tábuas (cortes de topo): absorvem muito verniz.\n- Embaixo dos pés: tocam o chão."
+    }
+  ],
+  "instalacao": [
+    {
+      "titulo": "Posicionar",
+      "texto": "- Espere 48 h do verniz.\n- Leve a mesa para o escritório em duas pessoas.\n- Confira o nível em cima do tampo e ajuste os feltros."
+    }
+  ],
+  "checklist": [
+    "O espaço no escritório foi medido e cabe 120 × 56 cm.",
+    "As diagonais dos quadros e do retângulo de cima são iguais.",
+    "A mesa não balança nos 4 pontos de apoio.",
+    "O tampo está preso nas cantoneiras e sem cola entre ele e a estrutura.",
+    "O verniz curou por 48 h antes de pôr peso.",
+    "A cadeira passa embaixo das travessas sem encostar."
+  ],
+  "glossario": [
+    {
+      "termo": "Cedrinho",
+      "definicao": "Madeira clara e leve, fácil de serrar e lixar. Vendida em tábuas."
+    },
+    {
+      "termo": "Madeira maciça",
+      "definicao": "Madeira inteira, sem mistura de chapa. Dilata e encolhe um pouco com a umidade."
+    },
+    {
+      "termo": "Veio",
+      "definicao": "O desenho e a direção das fibras da madeira. O corte e a lixa seguem o veio."
+    },
+    {
+      "termo": "Tampo",
+      "definicao": "A superfície de cima da mesa, onde você trabalha."
+    },
+    {
+      "termo": "Travessa",
+      "definicao": "Peça que liga duas outras e dá rigidez à estrutura."
+    },
+    {
+      "termo": "Cavilha",
+      "definicao": "Pino de madeira que entra em furos nas duas peças para alinhar e reforçar a junção."
+    },
+    {
+      "termo": "Pré-furo",
+      "definicao": "Furo fino feito antes do parafuso para a madeira não rachar."
+    },
+    {
+      "termo": "Escareador",
+      "definicao": "Broca que abre um rebaixo para a cabeça do parafuso ficar rente."
+    },
+    {
+      "termo": "Cantoneira",
+      "definicao": "Peça de metal em L que prende duas peças em ângulo reto."
+    },
+    {
+      "termo": "Diagonal",
+      "definicao": "Medida de canto a canto de um retângulo. Se as duas forem iguais, o retângulo está no esquadro."
+    }
+  ],
+  "fotos": [
+    "fotos/foto-01.jpg"
+  ]
+}

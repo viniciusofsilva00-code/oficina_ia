@@ -1,0 +1,266 @@
+{
+  "status": "ok",
+  "erros": [],
+  "avisos": [],
+  "verificacoes": [
+    "Espessura de todas as peças igual à do material",
+    "Nenhuma peça ocupa o lugar de outra (12 peças)",
+    "Medidas externas conferem: 120,0 × 56,0 × 75,0 cm",
+    "Áreas livres respeitadas (1 folgas)",
+    "Largura: sobra + perna + vão + perna + sobra: 120,0",
+    "Profundidade: sobra + quadro lateral + sobra: 56,0",
+    "Profundidade do tampo: 2 tábuas de 28 cm: 56,0",
+    "Altura: perna + tampo: 75,0",
+    "Altura do quadro lateral: pé + vão + travessa de cima: 72,5",
+    "Comprimento do quadro lateral: perna + travessa + perna: 46,0",
+    "Vão livre embaixo das travessas ≥ 55 cm: 59,5",
+    "Vão livre entre as pernas ≥ 90 cm: 105,0",
+    "Cada peça é montada em exatamente um passo (10 passos)",
+    "Chapas da lista de compras bastam: 2 × Tábua de cedrinho 2,5 × 10 cm, 1 × Tábua de cedrinho 2,5 × 15 cm, 1 × Tábua de cedrinho 2,5 × 30 cm"
+  ],
+  "medidas_reais": {
+    "largura": 120,
+    "altura": 75.0,
+    "profundidade": 56
+  },
+  "lista_corte": [
+    {
+      "ids": [
+        "AT",
+        "AF"
+      ],
+      "nomes": [
+        "Travessa comprida de trás",
+        "Travessa comprida da frente"
+      ],
+      "grupo": "Travessas",
+      "material": "ced15",
+      "material_nome": "Tábua de cedrinho 2,5 × 15 cm",
+      "comprimento": 105,
+      "largura": 13,
+      "espessura_mm": 25,
+      "veio": "no comprimento",
+      "bordas": [],
+      "fita_cm": 0.0,
+      "qtd": 2
+    },
+    {
+      "ids": [
+        "BA",
+        "CA",
+        "BB",
+        "CB"
+      ],
+      "nomes": [
+        "Pé esquerdo (trenó)",
+        "Travessa de cima esquerda",
+        "Pé direito (trenó)",
+        "Travessa de cima direita"
+      ],
+      "grupo": "Quadro esquerdo",
+      "material": "ced10",
+      "material_nome": "Tábua de cedrinho 2,5 × 10 cm",
+      "comprimento": 30,
+      "largura": 8,
+      "espessura_mm": 25,
+      "veio": "no comprimento",
+      "bordas": [],
+      "fita_cm": 0.0,
+      "qtd": 4
+    },
+    {
+      "ids": [
+        "M1",
+        "M2"
+      ],
+      "nomes": [
+        "Tampo, tábua de trás",
+        "Tampo, tábua da frente"
+      ],
+      "grupo": "Tampo",
+      "material": "ced30",
+      "material_nome": "Tábua de cedrinho 2,5 × 30 cm",
+      "comprimento": 120,
+      "largura": 28,
+      "espessura_mm": 25,
+      "veio": "no comprimento",
+      "bordas": [],
+      "fita_cm": 0.0,
+      "qtd": 2
+    },
+    {
+      "ids": [
+        "PA",
+        "PB",
+        "PC",
+        "PD"
+      ],
+      "nomes": [
+        "Perna esquerda de trás",
+        "Perna esquerda da frente",
+        "Perna direita de trás",
+        "Perna direita da frente"
+      ],
+      "grupo": "Quadro esquerdo",
+      "material": "ced10",
+      "material_nome": "Tábua de cedrinho 2,5 × 10 cm",
+      "comprimento": 72.5,
+      "largura": 8,
+      "espessura_mm": 25,
+      "veio": "no comprimento",
+      "bordas": [],
+      "fita_cm": 0.0,
+      "qtd": 4
+    }
+  ],
+  "fita_total_m": 0.0,
+  "plano_corte": [
+    {
+      "material": "ced10",
+      "nome": "Tábua de cedrinho 2,5 × 10 cm",
+      "chapa": {
+        "comprimento": 300,
+        "largura": 10
+      },
+      "chapas": [
+        {
+          "pecas": [
+            {
+              "id": "PA",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 8,
+              "girada": false
+            },
+            {
+              "id": "PB",
+              "x": 73.8,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 8,
+              "girada": false
+            },
+            {
+              "id": "PC",
+              "x": 146.6,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 8,
+              "girada": false
+            },
+            {
+              "id": "PD",
+              "x": 219.4,
+              "y": 1.0,
+              "c": 72.5,
+              "l": 8,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.773
+        },
+        {
+          "pecas": [
+            {
+              "id": "BA",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 30,
+              "l": 8,
+              "girada": false
+            },
+            {
+              "id": "CA",
+              "x": 31.3,
+              "y": 1.0,
+              "c": 30,
+              "l": 8,
+              "girada": false
+            },
+            {
+              "id": "BB",
+              "x": 61.6,
+              "y": 1.0,
+              "c": 30,
+              "l": 8,
+              "girada": false
+            },
+            {
+              "id": "CB",
+              "x": 91.9,
+              "y": 1.0,
+              "c": 30,
+              "l": 8,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.32
+        }
+      ]
+    },
+    {
+      "material": "ced15",
+      "nome": "Tábua de cedrinho 2,5 × 15 cm",
+      "chapa": {
+        "comprimento": 300,
+        "largura": 15
+      },
+      "chapas": [
+        {
+          "pecas": [
+            {
+              "id": "AT",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 105,
+              "l": 13,
+              "girada": false
+            },
+            {
+              "id": "AF",
+              "x": 106.3,
+              "y": 1.0,
+              "c": 105,
+              "l": 13,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.607
+        }
+      ]
+    },
+    {
+      "material": "ced30",
+      "nome": "Tábua de cedrinho 2,5 × 30 cm",
+      "chapa": {
+        "comprimento": 300,
+        "largura": 30
+      },
+      "chapas": [
+        {
+          "pecas": [
+            {
+              "id": "M1",
+              "x": 1.0,
+              "y": 1.0,
+              "c": 120,
+              "l": 28,
+              "girada": false
+            },
+            {
+              "id": "M2",
+              "x": 121.3,
+              "y": 1.0,
+              "c": 120,
+              "l": 28,
+              "girada": false
+            }
+          ],
+          "aproveitamento": 0.747
+        }
+      ]
+    }
+  ],
+  "gerado_em": "2026-10-26T13:00:55+00:00"
+}
